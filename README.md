@@ -1,18 +1,25 @@
-# Jekyll template
-Light and beautiful blog style template for jekyll
+# Halve  [![Donate](https://img.shields.io/badge/paypal-donate-blue.svg)](https://www.paypal.me/taylantatli/0usd)  
+  
+## `Sorry guys but there will be no update until I buy a new laptop.`
 
-[![Gitter](https://badges.gitter.im/nikrich/jekyll-slender-template.svg)](https://gitter.im/nikrich/jekyll-slender-template?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-[![Twitter](https://img.shields.io/badge/Twitter-@slender_rich-blue.svg?style=flat)](https://twitter.com/slender_rich)
+This theme is Jekyll port of [vangeltzo.com](http://vangeltzo.com/) (by [Vangelis Tzortzis](https://github.com/srekoble)).
 
-![preview](http://i.imgur.com/UzW9sxd.jpg)
+To learn how to install and use this theme check out the [installation guide](https://taylantatli.github.io/Halve/halve-theme/) for more information.
 
-## Demo
-Find a demo [here](http://nikrich.github.io/jekyll-wing-template/#)
+If you have a question, find a bug, or just want to say hi, please open an [issue on GitHub](https://github.com/TaylanTatli/Halve/issues/new).
 
-## Contributing
+## Preview   
+![screenshot of Halve](/images/halve-home-image.png)
 
-1. Clone the repo
-2. Checkout the dev branch ( Do not work directly on master )
-3. Use ```jekyll serve``` to run the project
-4. Make your changes and test
-5. Submit a pull request
+See a [live version of Halve](http://taylantatli.github.io/Halve) hosted on GitHub.
+
+# Credits
+- Original Work: [Vangelis Tzortzis](https://github.com/srekoble)  
+- Sample Posts and some code examples: [Michael Rose](https://github.com/mmistakes/)
+- Images: [Unsplash](https://unsplash.com/) and [Lorem Pixel](http://lorempixel.com)
+
+### Others
+- [Jekyll](http://jekyllrb.com/)
+- [jQuery](http://jquery.com/)
+- [Magnific Popup](http://dimsemenov.com/plugins/magnific-popup/)
+- [FitVids.JS](http://fitvidsjs.com/)
