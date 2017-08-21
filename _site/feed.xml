@@ -1,31 +1,31 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-08-21T12:07:04+08:00</updated><id>http://localhost:4000/</id><title type="html">Wayne</title><subtitle>Wait me,Big data</subtitle><entry><title type="html">test</title><link href="http://localhost:4000/test/" rel="alternate" type="text/html" title="test" /><published>2017-08-20T00:00:00+08:00</published><updated>2017-08-20T00:00:00+08:00</updated><id>http://localhost:4000/test</id><content type="html" xml:base="http://localhost:4000/test/">&lt;p&gt;sanjhwarijvdsnjfwhoagikrwcsojagbrjawovinarskgvkldsjrip&lt;/p&gt;</content><author><name></name></author><category term="content" /><category term="css" /><category term="edge case" /><category term="lists" /><category term="markup" /><summary type="html">sanjhwarijvdsnjfwhoagikrwcsojagbrjawovinarskgvkldsjrip</summary></entry><entry><title type="html">R的安装与帮助</title><link href="http://localhost:4000/R%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E5%B8%AE%E5%8A%A9/" rel="alternate" type="text/html" title="R的安装与帮助" /><published>2017-08-20T00:00:00+08:00</published><updated>2017-08-20T00:00:00+08:00</updated><id>http://localhost:4000/R%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E5%B8%AE%E5%8A%A9</id><content type="html" xml:base="http://localhost:4000/R%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E5%B8%AE%E5%8A%A9/">·R的获取与安装
-------------------------
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-08-21T16:19:02+08:00</updated><id>http://localhost:4000/</id><title type="html">Wayne</title><subtitle>Wait me,Big data</subtitle><entry><title type="html">test</title><link href="http://localhost:4000/test/" rel="alternate" type="text/html" title="test" /><published>2017-08-20T00:00:00+08:00</published><updated>2017-08-20T00:00:00+08:00</updated><id>http://localhost:4000/test</id><content type="html" xml:base="http://localhost:4000/test/">&lt;p&gt;sanjhwarijvdsnjfwhoagikrwcsojagbrjawovinarskgvkldsjrip&lt;/p&gt;</content><author><name></name></author><category term="content" /><category term="css" /><category term="edge case" /><category term="lists" /><category term="markup" /><summary type="html">sanjhwarijvdsnjfwhoagikrwcsojagbrjawovinarskgvkldsjrip</summary></entry><entry><title type="html">R的安装与帮助</title><link href="http://localhost:4000/R%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E5%B8%AE%E5%8A%A9/" rel="alternate" type="text/html" title="R的安装与帮助" /><published>2017-08-20T00:00:00+08:00</published><updated>2017-08-20T00:00:00+08:00</updated><id>http://localhost:4000/R%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E5%B8%AE%E5%8A%A9</id><content type="html" xml:base="http://localhost:4000/R%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E5%B8%AE%E5%8A%A9/">&lt;h2 id=&quot;r的获取与安装&quot;&gt;R的获取与安装&lt;/h2&gt;
 
-R的下载地址:cran.r-project.org&lt;br&gt;
-Windows操作系统下，选择“Download R for Windows”，然后选择“base”，会显示当前R的最新版本，点击下载&lt;br&gt;
-&lt;br&gt;
-# ·RStudio的获取与安装&lt;br&gt;
-RStudio的下载地址:rstudio.com&lt;br&gt;
-在RStudio模块下点击Download，进入版本类型界面，选择RStudio Desktop，然后根据系统版本选择对应的安装程序进行下载&lt;br&gt;
-&lt;br&gt;
-# ·R中的包(package)&lt;br&gt;
-## --扩展R基本功能的机制/集成了众多函数##&lt;br&gt;
-## --通常在CRAN/Bioconductor/GitHub等上面获取包##&lt;br&gt;
-    -直接在RStudio的命令行中输入以下代码即可安装包&lt;br&gt;
-	 install.packages(&quot;包名&quot;)  //在CRAN上获取包&lt;br&gt;
-	 install_github()  //在GitHub上获取包&lt;br&gt;
-	 例如:安装机器学习需要用到的包caret,打开RStudio，在命令行中输入install.packages(&quot;caret&quot;)，键入回车即可&lt;br&gt;
-	-安装完之后，使用包内的函数之前，需要加载对应的包，加载的代码为library(包名)&lt;br&gt;
-	 例如library(caret)&lt;br&gt;
-	-tips:当包加载完之后，直接在命令行输入data()，回车，就能打开包中所有所含函数集的详细信息;&lt;br&gt;
-		  如果想查看某一个数据集的具体信息，只需在命令行中输入 ?数据集名称 ，即可，例如?InsectSprays,即(帮助文档)可查看InsectSprays数据集的详细信息(帮助文档)&lt;br&gt;
-&lt;br&gt;
-# ·获取帮助&lt;br&gt;
-## --?函数名(R的帮助文档)&lt;br&gt;
-## --Google/Stackoverflow&lt;br&gt;
-## --如何问问题&lt;br&gt;
-	-操作系统、版本、哪一步产生的错误、预期是什么、得到的结果是什么、其他有用的信息&lt;br&gt;
-	-例如:Win7 R 3.2.0 lm()  &quot;seg fault on large data frame&quot;&lt;br&gt;</content><author><name></name></author><category term="大数据" /><category term="R" /><category term="环境配置" /><summary type="html">·R的获取与安装 ------------------------</summary></entry><entry><title type="html">继承</title><link href="http://localhost:4000/%E7%BB%A7%E6%89%BF/" rel="alternate" type="text/html" title="继承" /><published>2017-07-31T20:10:00+08:00</published><updated>2017-07-31T20:10:00+08:00</updated><id>http://localhost:4000/%E7%BB%A7%E6%89%BF</id><content type="html" xml:base="http://localhost:4000/%E7%BB%A7%E6%89%BF/">&lt;ul id=&quot;markdown-toc&quot;&gt;
+&lt;p&gt;R的下载地址:cran.r-project.org&lt;br /&gt;
+Windows操作系统下，选择“Download R for Windows”，然后选择“base”，会显示当前R的最新版本，点击下载&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;rstudio的获取与安装&quot;&gt;RStudio的获取与安装&lt;br /&gt;&lt;/h2&gt;
+&lt;p&gt;RStudio的下载地址:rstudio.com&lt;br /&gt;
+在RStudio模块下点击Download，进入版本类型界面，选择RStudio Desktop，然后根据系统版本选择对应的安装程序进行下载&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;r中的包package&quot;&gt;R中的包(package)&lt;/h2&gt;
+&lt;h3 id=&quot;扩展r基本功能的机制集成了众多函数&quot;&gt;扩展R基本功能的机制/集成了众多函数&lt;/h3&gt;
+&lt;h3 id=&quot;通常在cranbioconductorgithub等上面获取包&quot;&gt;通常在CRAN/Bioconductor/GitHub等上面获取包&lt;/h3&gt;
+&lt;p&gt;– 直接在RStudio的命令行中输入以下代码即可安装包&lt;br /&gt;
+ &lt;strong&gt;install.packages(“包名”)&lt;/strong&gt;  //在CRAN上获取包&lt;br /&gt;
+ &lt;strong&gt;install_github()&lt;/strong&gt;  //在GitHub上获取包&lt;br /&gt;
+ 例如:安装机器学习需要用到的包caret,打开RStudio，在命令行中输入&lt;strong&gt;install.packages(“caret”)&lt;/strong&gt;，键入回车即可&lt;br /&gt;
+– 安装完之后，使用包内的函数之前，需要加载对应的包，加载的代码为library(包名)&lt;br /&gt;
+ 例如:&lt;strong&gt;library(caret)&lt;/strong&gt;&lt;br /&gt;
+– tips:当包加载完之后，直接在命令行输入&lt;strong&gt;data()&lt;/strong&gt;，回车，就能打开包中所有所含函数集的详细信息;&lt;br /&gt;
+ 如果想查看某一个数据集的具体信息，只需在命令行中输入 ?数据集名称 ，即可。&lt;br /&gt;
+ 例如&lt;strong&gt;?InsectSprays&lt;/strong&gt;,即(帮助文档)可查看InsectSprays数据集的详细信息(帮助文档)&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;获取帮助&quot;&gt;获取帮助&lt;/h2&gt;
+&lt;h3 id=&quot;函数名r的帮助文档&quot;&gt;?函数名(R的帮助文档)&lt;/h3&gt;
+&lt;h3 id=&quot;googlestackoverflow&quot;&gt;Google/Stackoverflow&lt;/h3&gt;
+&lt;h3 id=&quot;如何问问题&quot;&gt;如何问问题&lt;/h3&gt;
+&lt;p&gt;- 操作系统、版本、哪一步产生的错误、预期是什么、得到的结果是什么、其他有用的信息&lt;br /&gt;
+- 例如:Win7 R 3.2.0 lm()  “seg fault on large data frame”&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><category term="大数据" /><category term="R" /><category term="环境配置" /><summary type="html">R的获取与安装</summary></entry><entry><title type="html">继承</title><link href="http://localhost:4000/%E7%BB%A7%E6%89%BF/" rel="alternate" type="text/html" title="继承" /><published>2017-07-31T20:10:00+08:00</published><updated>2017-07-31T20:10:00+08:00</updated><id>http://localhost:4000/%E7%BB%A7%E6%89%BF</id><content type="html" xml:base="http://localhost:4000/%E7%BB%A7%E6%89%BF/">&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#1原型链&quot; id=&quot;markdown-toc-1原型链&quot;&gt;1、原型链&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#2借用构造函数&quot; id=&quot;markdown-toc-2借用构造函数&quot;&gt;2、借用构造函数&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#3组合继承&quot; id=&quot;markdown-toc-3组合继承&quot;&gt;3、组合继承&lt;/a&gt;&lt;/li&gt;
@@ -555,7 +555,10 @@ image: http://example.com/some-image.png
 
 &lt;p&gt;An example of a Gist embed below.&lt;/p&gt;
 
-&lt;p&gt;true&lt;script src=&quot;https://gist.github.com/e813c2560b0f1ecc9f5d.js?file=pacman.patch&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/e813c2560b0f1ecc9f5d.js?file=pacman.patch&quot;&gt; &lt;/script&gt;
+
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:1&quot;&gt;
