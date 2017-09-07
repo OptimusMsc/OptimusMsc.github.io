@@ -55,7 +55,9 @@ weibo:              2978414332
 #behance:           username
 
 # Gems
-gems:
+#gems:
+#Plugins
+plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-gist
