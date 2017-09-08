@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-09-08T20:17:47+08:00</updated><id>http://localhost:4000/</id><title type="html">Wayne</title><subtitle>Wait me,Big data</subtitle><entry><title type="html">R-向量</title><link href="http://localhost:4000/R-%E5%90%91%E9%87%8F/" rel="alternate" type="text/html" title="R-向量" /><published>2017-09-08T00:00:00+08:00</published><updated>2017-09-08T00:00:00+08:00</updated><id>http://localhost:4000/R-%E5%90%91%E9%87%8F</id><content type="html" xml:base="http://localhost:4000/R-%E5%90%91%E9%87%8F/">&lt;ul id=&quot;markdown-toc&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-09-08T20:21:00+08:00</updated><id>http://localhost:4000/</id><title type="html">Wayne</title><subtitle>Wait me,Big data</subtitle><entry><title type="html">R-向量</title><link href="http://localhost:4000/R-%E5%90%91%E9%87%8F/" rel="alternate" type="text/html" title="R-向量" /><published>2017-09-08T00:00:00+08:00</published><updated>2017-09-08T00:00:00+08:00</updated><id>http://localhost:4000/R-%E5%90%91%E9%87%8F</id><content type="html" xml:base="http://localhost:4000/R-%E5%90%91%E9%87%8F/">&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#向量vector&quot; id=&quot;markdown-toc-向量vector&quot;&gt;向量(vector)&lt;/a&gt;    &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#使用vector函数创建向量&quot; id=&quot;markdown-toc-使用vector函数创建向量&quot;&gt;使用vector()函数创建向量&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#使用创建连续的整型向量&quot; id=&quot;markdown-toc-使用创建连续的整型向量&quot;&gt;使用&lt;strong&gt;:&lt;/strong&gt;创建连续的整型向量&lt;/a&gt;&lt;/li&gt;
@@ -29,9 +29,9 @@
 
 &lt;h3 id=&quot;使用names为向量中的元素添加名称&quot;&gt;使用names()为向量中的元素添加名称&lt;/h3&gt;
 &lt;p&gt; 例如:引用上文中的x1，names(x1)&amp;lt;-c(“a”,”b”,”c”,”d”)，运行完之后得到&lt;br /&gt;
-&lt;code class=&quot;highlighter-rouge&quot;&gt;x1
-a b c d
-1 2 3 4&lt;/code&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;x1&amp;lt;br&amp;gt;
+a b c d&amp;lt;br&amp;gt;
+1 2 3 4&amp;lt;br&amp;gt;&lt;/code&gt;
 即第1,2,3,4个元素对应的名称为a,b,c,d&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><category term="大数据" /><category term="R" /><category term="向量" /><summary type="html"></summary></entry><entry><title type="html">R-常见对象和属性</title><link href="http://localhost:4000/R-%E5%B8%B8%E8%A7%81%E5%AF%B9%E8%B1%A1%E5%92%8C%E5%B1%9E%E6%80%A7/" rel="alternate" type="text/html" title="R-常见对象和属性" /><published>2017-08-27T00:00:00+08:00</published><updated>2017-08-27T00:00:00+08:00</updated><id>http://localhost:4000/R-%E5%B8%B8%E8%A7%81%E5%AF%B9%E8%B1%A1%E5%92%8C%E5%B1%9E%E6%80%A7</id><content type="html" xml:base="http://localhost:4000/R-%E5%B8%B8%E8%A7%81%E5%AF%B9%E8%B1%A1%E5%92%8C%E5%B1%9E%E6%80%A7/">&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#r中对象的5种基本类型classes-of-objects&quot; id=&quot;markdown-toc-r中对象的5种基本类型classes-of-objects&quot;&gt;R中对象的5种基本类型(classes of objects)&lt;/a&gt;    &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#r中的赋值符号为-&quot; id=&quot;markdown-toc-r中的赋值符号为-&quot;&gt;R中的赋值符号为&amp;lt;-&lt;/a&gt;&lt;/li&gt;
