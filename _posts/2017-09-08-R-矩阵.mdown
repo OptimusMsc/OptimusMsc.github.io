@@ -1,0 +1,16 @@
+---
+layout: post
+title: R-矩阵
+categories:
+  - 大数据 R 矩阵
+tags:
+  - 大数据
+  - R
+  - 矩阵
+---
+
+* content
+{:toc}
+
+## 矩阵(matrix)
+--&nbsp;向量+维度属性(整数向量:nrow,ncol)<br>
