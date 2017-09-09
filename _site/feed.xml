@@ -1,14 +1,31 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-09-08T20:32:35+08:00</updated><id>http://localhost:4000/</id><title type="html">Wayne</title><subtitle>Wait me,Big data</subtitle><entry><title type="html">R-矩阵</title><link href="http://localhost:4000/R-%E7%9F%A9%E9%98%B5/" rel="alternate" type="text/html" title="R-矩阵" /><published>2017-09-08T00:00:00+08:00</published><updated>2017-09-08T00:00:00+08:00</updated><id>http://localhost:4000/R-%E7%9F%A9%E9%98%B5</id><content type="html" xml:base="http://localhost:4000/R-%E7%9F%A9%E9%98%B5/">* content
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-09-09T11:41:40+08:00</updated><id>http://localhost:4000/</id><title type="html">Wayne</title><subtitle>Wait me,Big data</subtitle><entry><title type="html">R-矩阵</title><link href="http://localhost:4000/R-%E7%9F%A9%E9%98%B5/" rel="alternate" type="text/html" title="R-矩阵" /><published>2017-09-08T00:00:00+08:00</published><updated>2017-09-08T00:00:00+08:00</updated><id>http://localhost:4000/R-%E7%9F%A9%E9%98%B5</id><content type="html" xml:base="http://localhost:4000/R-%E7%9F%A9%E9%98%B5/">* content
 {:toc}
 
 ## 矩阵(matrix)
---&amp;nbsp;向量+维度属性(整数向量:nrow,ncol)&lt;br&gt;</content><author><name></name></author><category term="大数据" /><category term="R" /><category term="矩阵" /><summary type="html">* content {:toc}</summary></entry><entry><title type="html">R-向量</title><link href="http://localhost:4000/R-%E5%90%91%E9%87%8F/" rel="alternate" type="text/html" title="R-向量" /><published>2017-09-08T00:00:00+08:00</published><updated>2017-09-08T00:00:00+08:00</updated><id>http://localhost:4000/R-%E5%90%91%E9%87%8F</id><content type="html" xml:base="http://localhost:4000/R-%E5%90%91%E9%87%8F/">&lt;ul id=&quot;markdown-toc&quot;&gt;
+--&amp;nbsp;向量+维度属性(整数向量:nrow,ncol)&lt;br&gt;
+
+### 使用matrix(&amp;emsp;)函数创建矩阵
+&amp;emsp;这个函数里至少要传入两个参数nrow和ncol，若要赋值，在应写在这两个参数前&lt;br&gt;
+&amp;emsp;例如：&lt;br&gt;
+&amp;emsp;&amp;emsp;创建一个3行2列，元素为空的矩阵x1，代码为x&lt;-matrix(nrow=3,ncol=2)&lt;br&gt;
+&amp;emsp;&amp;emsp;若要创建一个3行2列，元素为1到6的矩阵，则代码为x&lt;-matrix(1:6,nrow=3,ncol=2)&lt;br&gt;
+**&amp;emsp;ps:R是列优先语言,一列填满后才会填下一列&lt;br&gt;
+&amp;emsp;&amp;emsp;dim(&amp;emsp;)可以查看矩阵的维度属性。例如dim(x)，会显示3&amp;emsp;2，即x为一个3行2列的矩阵&lt;br&gt;
+&amp;emsp;&amp;emsp;attributes(&amp;emsp;)可以查看矩阵的所有属性。例如attributes(x)，会显示$dim&amp;emsp;3&amp;emsp;2&lt;br&gt;**
+
+### 采用先定义一个向量，再为它添加维度属性的方法创建矩阵
+&amp;emsp;例如：y&lt;-1:6，创建一个1到6的向量，然后使用dim(y)&lt;-c(2,3)，为其添加2行3列的属性即可。&lt;br&gt;
+
+### 矩阵的拼接
+&amp;emsp;定义一个与y行列数相同的矩阵y2&lt;-matrix(1:6,nrow=2,ncol=3)
+--&amp;nbsp;使用rbind(&amp;emsp;)函数按行拼接
+&amp;emsp;例如：rbind(y,y2)，则会得到</content><author><name></name></author><category term="大数据" /><category term="R" /><category term="矩阵" /><summary type="html">* content {:toc}</summary></entry><entry><title type="html">R-向量</title><link href="http://localhost:4000/R-%E5%90%91%E9%87%8F/" rel="alternate" type="text/html" title="R-向量" /><published>2017-09-08T00:00:00+08:00</published><updated>2017-09-08T00:00:00+08:00</updated><id>http://localhost:4000/R-%E5%90%91%E9%87%8F</id><content type="html" xml:base="http://localhost:4000/R-%E5%90%91%E9%87%8F/">&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#向量vector&quot; id=&quot;markdown-toc-向量vector&quot;&gt;向量(vector)&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#使用vector函数创建向量&quot; id=&quot;markdown-toc-使用vector函数创建向量&quot;&gt;使用vector()函数创建向量&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#使用vector函数创建向量&quot; id=&quot;markdown-toc-使用vector函数创建向量&quot;&gt;使用vector( )函数创建向量&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#使用创建连续的整型向量&quot; id=&quot;markdown-toc-使用创建连续的整型向量&quot;&gt;使用&lt;strong&gt;:&lt;/strong&gt;创建连续的整型向量&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#使用c函数创建向量&quot; id=&quot;markdown-toc-使用c函数创建向量&quot;&gt;使用c( )函数创建向量&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#使用as类型名变量名来对变量进行类型的强制转换&quot; id=&quot;markdown-toc-使用as类型名变量名来对变量进行类型的强制转换&quot;&gt;使用as.类型名(变量名)来对变量进行类型的强制转换&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#使用names为向量中的元素添加名称&quot; id=&quot;markdown-toc-使用names为向量中的元素添加名称&quot;&gt;使用names()为向量中的元素添加名称&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#使用names为向量中的元素添加名称&quot; id=&quot;markdown-toc-使用names为向量中的元素添加名称&quot;&gt;使用names( )为向量中的元素添加名称&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
@@ -16,7 +33,7 @@
 &lt;h2 id=&quot;向量vector&quot;&gt;向量(vector)&lt;/h2&gt;
 &lt;p&gt;– 只能包含同一类型的对象&lt;br /&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;使用vector函数创建向量&quot;&gt;使用vector()函数创建向量&lt;/h3&gt;
+&lt;h3 id=&quot;使用vector函数创建向量&quot;&gt;使用vector( )函数创建向量&lt;/h3&gt;
 &lt;p&gt; 函数格式:vector(“元素类型”,该向量包含的元素个数)&lt;br /&gt;
  例如:创建一个含有10个字符型元素的向量x，代码为x&amp;lt;-vector(“character”,length=10)&lt;br /&gt;&lt;/p&gt;
 
@@ -31,7 +48,7 @@
 &lt;h3 id=&quot;使用as类型名变量名来对变量进行类型的强制转换&quot;&gt;使用as.类型名(变量名)来对变量进行类型的强制转换&lt;/h3&gt;
 &lt;p&gt; 例如:x&amp;lt;-4,as.character(x)，即可将x转化为字符型变量，常用的还有as.numeric( )，as.logical( )等&lt;br /&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;使用names为向量中的元素添加名称&quot;&gt;使用names()为向量中的元素添加名称&lt;/h3&gt;
+&lt;h3 id=&quot;使用names为向量中的元素添加名称&quot;&gt;使用names( )为向量中的元素添加名称&lt;/h3&gt;
 &lt;p&gt; 例如:引用上文中的x1，names(x1)&amp;lt;-c(“a”,”b”,”c”,”d”)，运行完之后得到&lt;br /&gt;
 &lt;code class=&quot;highlighter-rouge&quot;&gt;x1&amp;lt;br&amp;gt;
 a b c d&amp;lt;br&amp;gt;

@@ -14,3 +14,27 @@ tags:
 
 ## 矩阵(matrix)
 --&nbsp;向量+维度属性(整数向量:nrow,ncol)<br>
+
+### 使用matrix(&emsp;)函数创建矩阵
+&emsp;这个函数里至少要传入两个参数nrow和ncol，若要赋值，在应写在这两个参数前<br>
+&emsp;例如：<br>
+&emsp;&emsp;创建一个3行2列，元素为空的矩阵x1，代码为x<-matrix(nrow=3,ncol=2)<br>
+&emsp;&emsp;若要创建一个3行2列，元素为1到6的矩阵，则代码为x<-matrix(1:6,nrow=3,ncol=2)<br>
+**&emsp;ps:R是列优先语言,一列填满后才会填下一列<br>
+&emsp;&emsp;dim(&emsp;)可以查看矩阵的维度属性。例如dim(x)，会显示3&emsp;2，即x为一个3行2列的矩阵<br>
+&emsp;&emsp;attributes(&emsp;)可以查看矩阵的所有属性。例如attributes(x)，会显示$dim&emsp;3&emsp;2<br>**
+
+### 采用先定义一个向量，再为它添加维度属性的方法创建矩阵
+&emsp;例如：y<-1:6，创建一个1到6的向量，然后使用dim(y)<-c(2,3)，为其添加2行3列的属性即可。<br>
+
+### 矩阵的拼接
+&emsp;定义一个与y行列数相同的矩阵y2<-matrix(1:6,nrow=2,ncol=3)
+--&nbsp;使用rbind(&emsp;)函数按行拼接
+&emsp;例如：rbind(y,y2)，则会得到
+
+
+
+
+
+
+
