@@ -30,7 +30,7 @@ tags:
 ### 矩阵的拼接
 &emsp;定义一个与y行列数相同的矩阵y2<-matrix(1:6,nrow=2,ncol=3)
 --&nbsp;使用rbind(&emsp;)函数按行拼接
-&emsp;例如：rbind(y,y2)，则会得到
+&emsp;例如：rbind(y,y2)，则会得到一个4行3列的矩阵
 
 
 
