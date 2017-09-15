@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-09-15T16:20:17+08:00</updated><id>http://localhost:4000/</id><title type="html">Wayne</title><subtitle>Wait me,Big data</subtitle><entry><title type="html">R-缺失值</title><link href="http://localhost:4000/R-%E7%BC%BA%E5%A4%B1%E5%80%BC/" rel="alternate" type="text/html" title="R-缺失值" /><published>2017-09-14T00:00:00+08:00</published><updated>2017-09-14T00:00:00+08:00</updated><id>http://localhost:4000/R-%E7%BC%BA%E5%A4%B1%E5%80%BC</id><content type="html" xml:base="http://localhost:4000/R-%E7%BC%BA%E5%A4%B1%E5%80%BC/">&lt;ul id=&quot;markdown-toc&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-09-15T17:14:10+08:00</updated><id>http://localhost:4000/</id><title type="html">Wayne</title><subtitle>Wait me,Big data</subtitle><entry><title type="html">R-缺失值</title><link href="http://localhost:4000/R-%E7%BC%BA%E5%A4%B1%E5%80%BC/" rel="alternate" type="text/html" title="R-缺失值" /><published>2017-09-14T00:00:00+08:00</published><updated>2017-09-14T00:00:00+08:00</updated><id>http://localhost:4000/R-%E7%BC%BA%E5%A4%B1%E5%80%BC</id><content type="html" xml:base="http://localhost:4000/R-%E7%BC%BA%E5%A4%B1%E5%80%BC/">&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#缺失值missingvalue&quot; id=&quot;markdown-toc-缺失值missingvalue&quot;&gt;缺失值(missing value)&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#使用isna和isnan判断向量中是否含有缺失值&quot; id=&quot;markdown-toc-使用isna和isnan判断向量中是否含有缺失值&quot;&gt;使用is.na( )和is.nan( )判断向量中是否含有缺失值&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -47,7 +47,12 @@ is.nan(y)
   &lt;li&gt;&lt;a href=&quot;#数据框data-frame&quot; id=&quot;markdown-toc-数据框data-frame&quot;&gt;数据框(data frame)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;数据框data-frame&quot;&gt;数据框(data frame)&lt;/h2&gt;</content><author><name></name></author><category term="大数据" /><category term="R" /><category term="数据框" /><summary type="html"></summary></entry><entry><title type="html">R-因子</title><link href="http://localhost:4000/R-%E5%9B%A0%E5%AD%90/" rel="alternate" type="text/html" title="R-因子" /><published>2017-09-09T00:00:00+08:00</published><updated>2017-09-09T00:00:00+08:00</updated><id>http://localhost:4000/R-%E5%9B%A0%E5%AD%90</id><content type="html" xml:base="http://localhost:4000/R-%E5%9B%A0%E5%AD%90/">&lt;ul id=&quot;markdown-toc&quot;&gt;
+&lt;h2 id=&quot;数据框data-frame&quot;&gt;数据框(data frame)&lt;/h2&gt;
+&lt;p&gt;– 主要用于存储&lt;em&gt;表格数据&lt;/em&gt;(tabular data)&lt;br /&gt;
+– 视为各元素长度相同的列表&lt;br /&gt;
+  · 每个元素代表&lt;em&gt;一列数据&lt;/em&gt;&lt;br /&gt;
+  · 每个元素的长度代表&lt;em&gt;行数&lt;/em&gt;&lt;br /&gt;
+  · 元素类型可以不同&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><category term="大数据" /><category term="R" /><category term="数据框" /><summary type="html"></summary></entry><entry><title type="html">R-因子</title><link href="http://localhost:4000/R-%E5%9B%A0%E5%AD%90/" rel="alternate" type="text/html" title="R-因子" /><published>2017-09-09T00:00:00+08:00</published><updated>2017-09-09T00:00:00+08:00</updated><id>http://localhost:4000/R-%E5%9B%A0%E5%AD%90</id><content type="html" xml:base="http://localhost:4000/R-%E5%9B%A0%E5%AD%90/">&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#因子factor&quot; id=&quot;markdown-toc-因子factor&quot;&gt;因子(factor)&lt;/a&gt;    &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#使用factor函数创建因子&quot; id=&quot;markdown-toc-使用factor函数创建因子&quot;&gt;使用factor( )函数创建因子&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#使用table查看当前因子的整体情况&quot; id=&quot;markdown-toc-使用table查看当前因子的整体情况&quot;&gt;使用table( )查看当前因子的整体情况&lt;/a&gt;&lt;/li&gt;
@@ -149,59 +154,63 @@ b 2 4 6
 &lt;h3 id=&quot;矩阵的拼接&quot;&gt;矩阵的拼接&lt;/h3&gt;
 &lt;p&gt; 定义一个与y行列数相同的矩阵y2&amp;lt;-matrix(2:7,nrow=2,ncol=3)&lt;br /&gt;
 – 使用rbind( )函数按行拼接&lt;br /&gt;
- 例如：rbind(y,y2)，则会得到一个4行3列的矩阵&lt;br /&gt;
-`
-     [,1] [,2] [,3]
+ 例如：rbind(y,y2)，则会得到一个4行3列的矩阵&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;     [,1] [,2] [,3]
 [1,]    1    3    5
 [2,]    2    4    6
 [3,]    2    4    6
 [4,]    3    5    7
-&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;br&amp;gt;
---&amp;amp;nbsp;使用cbind(&amp;amp;nbsp;)函数按列拼接&amp;lt;br&amp;gt;
-&amp;amp;emsp;例如：cbind(y,y2)，则会得到一个2行6列的矩阵&amp;lt;br&amp;gt;
-&lt;/code&gt;
-     [,1] [,2] [,3] [,4] [,5] [,6]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;– 使用cbind( )函数按列拼接&lt;br /&gt;
+ 例如：cbind(y,y2)，则会得到一个2行6列的矩阵&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;     [,1] [,2] [,3] [,4] [,5] [,6]
 [1,]    1    3    5    2    4    6
 [2,]    2    4    6    3    5    7
-`&lt;br /&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h2 id=&quot;数组array&quot;&gt;数组(array)&lt;/h2&gt;
 &lt;p&gt;– 与矩阵类似，但是维度可以大于2&lt;br /&gt;&lt;/p&gt;
 &lt;h3 id=&quot;使用array函数创建数组&quot;&gt;使用array( )函数创建数组&lt;/h3&gt;
 &lt;p&gt; 这个函数里需要传入两个参数，第一个为数组的内容，第二个为维度的设定&lt;br /&gt;
  例如：&lt;br /&gt;
-  z&amp;lt;-array(1:24,dim=c(4,6))，即可得到一个4行6列的二维数组
-`
-     [,1] [,2] [,3] [,4] [,5] [,6]
+  z&amp;lt;-array(1:24,dim=c(4,6))，即可得到一个4行6列的二维数组&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;     [,1] [,2] [,3] [,4] [,5] [,6]
 [1,]    1    5    9   13   17   21
 [2,]    2    6   10   14   18   22
 [3,]    3    7   11   15   19   23
 [4,]    4    8   12   16   20   24
-&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;br&amp;gt;
-&amp;amp;emsp;&amp;amp;emsp;z1&amp;lt;-array(1:24,dim=c(2,3,4))，即可得到一个每个维度都是2行3列的二维数组的四维数组&amp;lt;br&amp;gt;
-&amp;amp;emsp;&amp;amp;emsp;**ps:排列数字时，会先按列排完第一个维度中的2行3列矩阵，再排第二个维度，以此类推&amp;lt;br&amp;gt;**
-&lt;/code&gt;
-, , 1&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; [,1] [,2] [,3] [1,]    1    3    5 [2,]    2    4    6
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;, , 2&lt;/p&gt;
+&lt;p&gt;  z1&amp;lt;-array(1:24,dim=c(2,3,4))，即可得到一个每个维度都是2行3列的二维数组的四维数组&lt;br /&gt;
+  &lt;strong&gt;ps：排列数字时，会先按列排完第一个维度中的2行3列矩阵，再排第二个维度，以此类推&lt;br /&gt;&lt;/strong&gt;&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; [,1] [,2] [,3] [1,]    7    9   11 [2,]    8   10   12
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  , , 1
+             [,1] [,2] [,3]
+        [1,]    1    3    5
+        [2,]    2    4    6
 
-&lt;p&gt;, , 3&lt;/p&gt;
+  , , 2
+             [,1] [,2] [,3]
+        [1,]    7    9   11
+        [2,]    8   10   12
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; [,1] [,2] [,3] [1,]   13   15   17 [2,]   14   16   18
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+  , , 3
+             [,1] [,2] [,3]
+        [1,]   13   15   17
+        [2,]   14   16   18
 
-&lt;p&gt;, , 4&lt;/p&gt;
+  , , 4
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; [,1] [,2] [,3] [1,]   19   21   23 [2,]   20   22   24 `&amp;lt;br&amp;gt;
+             [,1] [,2] [,3]
+        [1,]   19   21   23
+        [2,]   20   22   24
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;</content><author><name></name></author><category term="大数据" /><category term="R" /><category term="矩阵" /><category term="数组" /><summary type="html"></summary></entry><entry><title type="html">R-向量</title><link href="http://localhost:4000/R-%E5%90%91%E9%87%8F/" rel="alternate" type="text/html" title="R-向量" /><published>2017-09-08T00:00:00+08:00</published><updated>2017-09-08T00:00:00+08:00</updated><id>http://localhost:4000/R-%E5%90%91%E9%87%8F</id><content type="html" xml:base="http://localhost:4000/R-%E5%90%91%E9%87%8F/">&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#向量vector&quot; id=&quot;markdown-toc-向量vector&quot;&gt;向量(vector)&lt;/a&gt;    &lt;ul&gt;
@@ -233,11 +242,15 @@ b 2 4 6
 &lt;p&gt; 例如:x&amp;lt;-4,as.character(x)，即可将x转化为字符型变量，常用的还有as.numeric( )，as.logical( )等&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;使用names为向量中的元素添加名称&quot;&gt;使用names( )为向量中的元素添加名称&lt;/h3&gt;
-&lt;p&gt; 例如:引用上文中的x1，names(x1)&amp;lt;-c(“a”,”b”,”c”,”d”)，运行完之后得到&lt;br /&gt;
-&lt;code class=&quot;highlighter-rouge&quot;&gt;x1&amp;lt;br&amp;gt;
-a b c d&amp;lt;br&amp;gt;
-1 2 3 4&lt;/code&gt;&lt;br /&gt;
-即第1,2,3,4个元素对应的名称为a,b,c,d&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><category term="大数据" /><category term="R" /><category term="向量" /><summary type="html"></summary></entry><entry><title type="html">R-常见对象和属性</title><link href="http://localhost:4000/R-%E5%B8%B8%E8%A7%81%E5%AF%B9%E8%B1%A1%E5%92%8C%E5%B1%9E%E6%80%A7/" rel="alternate" type="text/html" title="R-常见对象和属性" /><published>2017-08-27T00:00:00+08:00</published><updated>2017-08-27T00:00:00+08:00</updated><id>http://localhost:4000/R-%E5%B8%B8%E8%A7%81%E5%AF%B9%E8%B1%A1%E5%92%8C%E5%B1%9E%E6%80%A7</id><content type="html" xml:base="http://localhost:4000/R-%E5%B8%B8%E8%A7%81%E5%AF%B9%E8%B1%A1%E5%92%8C%E5%B1%9E%E6%80%A7/">&lt;ul id=&quot;markdown-toc&quot;&gt;
+&lt;p&gt; 例如:引用上文中的x1，names(x1)&amp;lt;-c(“a”,”b”,”c”,”d”)，运行完之后得到&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;x1
+a b c d
+1 2 3 4
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;即第1,2,3,4个元素对应的名称为a,b,c,d&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><category term="大数据" /><category term="R" /><category term="向量" /><summary type="html"></summary></entry><entry><title type="html">R-常见对象和属性</title><link href="http://localhost:4000/R-%E5%B8%B8%E8%A7%81%E5%AF%B9%E8%B1%A1%E5%92%8C%E5%B1%9E%E6%80%A7/" rel="alternate" type="text/html" title="R-常见对象和属性" /><published>2017-08-27T00:00:00+08:00</published><updated>2017-08-27T00:00:00+08:00</updated><id>http://localhost:4000/R-%E5%B8%B8%E8%A7%81%E5%AF%B9%E8%B1%A1%E5%92%8C%E5%B1%9E%E6%80%A7</id><content type="html" xml:base="http://localhost:4000/R-%E5%B8%B8%E8%A7%81%E5%AF%B9%E8%B1%A1%E5%92%8C%E5%B1%9E%E6%80%A7/">&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#r中对象的5种基本类型classes-of-objects&quot; id=&quot;markdown-toc-r中对象的5种基本类型classes-of-objects&quot;&gt;R中对象的5种基本类型(classes of objects)&lt;/a&gt;    &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#r中的赋值符号为-&quot; id=&quot;markdown-toc-r中的赋值符号为-&quot;&gt;R中的赋值符号为&amp;lt;-&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#查看变量的值的方法&quot; id=&quot;markdown-toc-查看变量的值的方法&quot;&gt;查看变量的值的方法&lt;/a&gt;&lt;/li&gt;
