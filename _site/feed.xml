@@ -1,81 +1,209 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-09-09T16:42:20+08:00</updated><id>http://localhost:4000/</id><title type="html">Wayne</title><subtitle>Wait me,Big data</subtitle><entry><title type="html">R-矩阵和数组</title><link href="http://localhost:4000/R-%E7%9F%A9%E9%98%B5/" rel="alternate" type="text/html" title="R-矩阵和数组" /><published>2017-09-08T00:00:00+08:00</published><updated>2017-09-08T00:00:00+08:00</updated><id>http://localhost:4000/R-%E7%9F%A9%E9%98%B5</id><content type="html" xml:base="http://localhost:4000/R-%E7%9F%A9%E9%98%B5/">* content
-{:toc}
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-09-15T16:20:17+08:00</updated><id>http://localhost:4000/</id><title type="html">Wayne</title><subtitle>Wait me,Big data</subtitle><entry><title type="html">R-缺失值</title><link href="http://localhost:4000/R-%E7%BC%BA%E5%A4%B1%E5%80%BC/" rel="alternate" type="text/html" title="R-缺失值" /><published>2017-09-14T00:00:00+08:00</published><updated>2017-09-14T00:00:00+08:00</updated><id>http://localhost:4000/R-%E7%BC%BA%E5%A4%B1%E5%80%BC</id><content type="html" xml:base="http://localhost:4000/R-%E7%BC%BA%E5%A4%B1%E5%80%BC/">&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#缺失值missingvalue&quot; id=&quot;markdown-toc-缺失值missingvalue&quot;&gt;缺失值(missing value)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#使用isna和isnan判断向量中是否含有缺失值&quot; id=&quot;markdown-toc-使用isna和isnan判断向量中是否含有缺失值&quot;&gt;使用is.na( )和is.nan( )判断向量中是否含有缺失值&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-## 矩阵(matrix)
---&amp;nbsp;向量+维度属性(整数向量:nrow,ncol)&lt;br&gt;
-&amp;emsp;**ps:矩阵的维度只能为2&lt;br&gt;**
+&lt;h2 id=&quot;缺失值missingvalue&quot;&gt;缺失值(missing value)&lt;/h2&gt;
+&lt;p&gt;– NA/NaN:NaN属于NA,NA不属于NaN(NaN一般用来表示数字的缺失值，而NA可以表示任何类型的缺失值)&lt;br /&gt;
+– NA有类型属性：integer NA，character NA等&lt;br /&gt;&lt;/p&gt;
 
-### 使用matrix(&amp;emsp;)函数创建矩阵
-&amp;emsp;这个函数里至少要传入两个参数nrow和ncol，若要赋值，在应写在这两个参数前&lt;br&gt;
-&amp;emsp;例如：&lt;br&gt;
-&amp;emsp;&amp;emsp;创建一个3行2列，元素为空的矩阵x1，代码为x&lt;-matrix(nrow=3,ncol=2)&lt;br&gt;
-&amp;emsp;&amp;emsp;若要创建一个3行2列，元素为1到6的矩阵，则代码为x&lt;-matrix(1:6,nrow=3,ncol=2)&lt;br&gt;
-**&amp;emsp;ps:R是列优先语言,一列填满后才会填下一列&lt;br&gt;
-&amp;emsp;&amp;emsp;dim(&amp;nbsp;)可以查看矩阵的维度属性。例如dim(x)，会显示3&amp;emsp;2，即x为一个3行2列的矩阵&lt;br&gt;
-&amp;emsp;&amp;emsp;attributes(&amp;nbsp;)可以查看矩阵的所有属性。例如attributes(x)，会显示$dim&amp;emsp;3&amp;emsp;2&lt;br&gt;**
+&lt;h2 id=&quot;使用isna和isnan判断向量中是否含有缺失值&quot;&gt;使用is.na( )和is.nan( )判断向量中是否含有缺失值&lt;/h2&gt;
+&lt;p&gt; 例如：&lt;br /&gt;
+  若输入&lt;br /&gt;&lt;/p&gt;
 
-### 采用先定义一个向量，再为它添加维度属性的方法创建矩阵
-&amp;emsp;例如：y&lt;-1:6，创建一个1到6的向量，然后使用dim(y)&lt;-c(2,3)，为其添加2行3列的属性即可。&lt;br&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;x &amp;lt;- c(1,NA,2,NA,3)
+is.na(x)
+is.nan(x)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-### 矩阵的拼接
-&amp;emsp;定义一个与y行列数相同的矩阵y2&lt;-matrix(2:7,nrow=2,ncol=3)&lt;br&gt;
---&amp;nbsp;使用rbind(&amp;nbsp;)函数按行拼接&lt;br&gt;
-&amp;emsp;例如：rbind(y,y2)，则会得到一个4行3列的矩阵&lt;br&gt;
+&lt;p&gt;运行后会返回&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;is.na(x)
+[1] FALSE  TRUE FALSE  TRUE FALSE
+is.nan(x)
+[1] FALSE FALSE FALSE FALSE FALSE
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;  若输入&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;y &amp;lt;- c(1,NaN,2,NaN,3)
+is.na(y)
+is.nan(y)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;运行后会返回&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;is.na(y)
+[1] FALSE  TRUE FALSE  TRUE FALSE
+is.nan(y)
+[1] FALSE  TRUE FALSE  TRUE FALSE
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;说明，如果y中包含NAN，则可以被is.na( )检测出来&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><category term="大数据" /><category term="R" /><category term="缺失值" /><summary type="html"></summary></entry><entry><title type="html">R-数据框</title><link href="http://localhost:4000/R-%E6%95%B0%E6%8D%AE%E6%A1%86/" rel="alternate" type="text/html" title="R-数据框" /><published>2017-09-14T00:00:00+08:00</published><updated>2017-09-14T00:00:00+08:00</updated><id>http://localhost:4000/R-%E6%95%B0%E6%8D%AE%E6%A1%86</id><content type="html" xml:base="http://localhost:4000/R-%E6%95%B0%E6%8D%AE%E6%A1%86/">&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#数据框data-frame&quot; id=&quot;markdown-toc-数据框data-frame&quot;&gt;数据框(data frame)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;数据框data-frame&quot;&gt;数据框(data frame)&lt;/h2&gt;</content><author><name></name></author><category term="大数据" /><category term="R" /><category term="数据框" /><summary type="html"></summary></entry><entry><title type="html">R-因子</title><link href="http://localhost:4000/R-%E5%9B%A0%E5%AD%90/" rel="alternate" type="text/html" title="R-因子" /><published>2017-09-09T00:00:00+08:00</published><updated>2017-09-09T00:00:00+08:00</updated><id>http://localhost:4000/R-%E5%9B%A0%E5%AD%90</id><content type="html" xml:base="http://localhost:4000/R-%E5%9B%A0%E5%AD%90/">&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#因子factor&quot; id=&quot;markdown-toc-因子factor&quot;&gt;因子(factor)&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#使用factor函数创建因子&quot; id=&quot;markdown-toc-使用factor函数创建因子&quot;&gt;使用factor( )函数创建因子&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#使用table查看当前因子的整体情况&quot; id=&quot;markdown-toc-使用table查看当前因子的整体情况&quot;&gt;使用table( )查看当前因子的整体情况&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#使用unclass去掉因子的levels属性查看因子的内容&quot; id=&quot;markdown-toc-使用unclass去掉因子的levels属性查看因子的内容&quot;&gt;使用unclass( )去掉因子的levels属性，查看因子的内容&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;因子factor&quot;&gt;因子(factor)&lt;/h2&gt;
+&lt;p&gt;– 处理&lt;em&gt;分类&lt;/em&gt;数据/有序vs.无序&lt;br /&gt;
+– 整数向量+标签(label)(优于整数向量)&lt;br /&gt;
+– Male/Female vs. 1/2(可以把性别存为1/2)&lt;br /&gt;
+– 常用于lm( ),glm( )&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;使用factor函数创建因子&quot;&gt;使用factor( )函数创建因子&lt;/h3&gt;
+&lt;p&gt; 例如：x&amp;lt;-factor(c(“female”,”female”,”male”,”male”,”female”))，会得到&lt;br /&gt;
+`
+[1] female female male   male   female&lt;br /&gt;
+Levels: female male&lt;br /&gt;
+`
+第一行是x的内容，第二行代表当前的因子包含两个水平female和male&lt;br /&gt;
+ 若要自定义水平，则可以在factor( )函数中自行添加，代码如下&lt;br /&gt;
+ y &amp;lt;- factor(c(“female”,”female”,”male”,”male”,”female”),levels = c(“male”,”female”))，会得到&lt;br /&gt;
+`
+[1] female female male   male   female&lt;br /&gt;
+Levels: male female&lt;br /&gt;
+`
+ 与x相比，y的内容相同，但是水平的顺序不同，利用levels可以设定基线水平&lt;br /&gt;
+ &lt;strong&gt;ps:levels是因子的一个属性。levels中，谁在前谁就是基线水平&lt;/strong&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;使用table查看当前因子的整体情况&quot;&gt;使用table( )查看当前因子的整体情况&lt;/h3&gt;
+&lt;p&gt; 输入table(x)会得到&lt;br /&gt;
+`	
+female   male 
+     3      2 
+`&lt;/p&gt;
+
+&lt;h3 id=&quot;使用unclass去掉因子的levels属性查看因子的内容&quot;&gt;使用unclass( )去掉因子的levels属性，查看因子的内容&lt;/h3&gt;
+&lt;p&gt; 输入unclass(x)，会得到&lt;br /&gt;
+[1] 1 1 2 2 1&lt;br /&gt;
+attr(,”levels”)&lt;br /&gt;
+[1] “female” “male”&lt;br /&gt;
+ 可以看到，unclass后，内容变成了&lt;br /&gt; 
+&lt;code class=&quot;highlighter-rouge&quot;&gt;1 1 2 2 1&lt;/code&gt;&lt;br /&gt;
+ 曾经的属性是levels，它有两个水平female和male&lt;br /&gt;
+ 去掉属性之后的因子，又变成了整数类型。输入class(unclass(x))，会得到integer&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><category term="大数据" /><category term="R" /><category term="因子" /><summary type="html"></summary></entry><entry><title type="html">R-列表</title><link href="http://localhost:4000/R-%E5%88%97%E8%A1%A8/" rel="alternate" type="text/html" title="R-列表" /><published>2017-09-09T00:00:00+08:00</published><updated>2017-09-09T00:00:00+08:00</updated><id>http://localhost:4000/R-%E5%88%97%E8%A1%A8</id><content type="html" xml:base="http://localhost:4000/R-%E5%88%97%E8%A1%A8/">&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#列表list&quot; id=&quot;markdown-toc-列表list&quot;&gt;列表(list)&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#使用list函数创建列表&quot; id=&quot;markdown-toc-使用list函数创建列表&quot;&gt;使用list( )函数创建列表&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#可以使用列表和dimnames函数为矩阵的每行每列命名添加name属性&quot; id=&quot;markdown-toc-可以使用列表和dimnames函数为矩阵的每行每列命名添加name属性&quot;&gt;可以使用列表和dimnames( )函数为矩阵的每行每列命名(添加name属性)&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;列表list&quot;&gt;列表(list)&lt;/h2&gt;
+&lt;p&gt;– 可以包含不同类型的对象&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;使用list函数创建列表&quot;&gt;使用list( )函数创建列表&lt;/h3&gt;
+&lt;p&gt; 里面的参数为要传入list中的元素&lt;br /&gt;
+ 例如：&lt;br /&gt;
+  使用l1&amp;lt;-list(“a”,2,10L,3+4i,TRUE)可以创建一个第一个元素为字符”a”，第二个元素为数值2，第三个元素为整数10，第四个元素为复数3+4i，第五个元素为逻辑TRUE的列表&lt;br /&gt;
+  使用l2&amp;lt;-list(a=1,b=2,c=3)可以创建元素分别为1,2,3的数组，且三个元素的name分别为a,b,c&lt;br /&gt;
+  使用l3&amp;lt;-list(c(1,2,3),c(4,5,6,7))可以创建每个元素包含不止一个元素的列表，例中l3包含2个元素，第一个元素包含1,2,3三个元素，第二个元素包含4,5,6,7四个元素&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;可以使用列表和dimnames函数为矩阵的每行每列命名添加name属性&quot;&gt;可以使用列表和dimnames( )函数为矩阵的每行每列命名(添加name属性)&lt;/h3&gt;
+&lt;p&gt; 例如：新建2行3列的矩阵x&amp;lt;-matrix(1:6,nrow=2,ncol=3)，然后输入dimnames(x)&amp;lt;-list(c(“a”,”b”),c(“c”,”d”,”e”))，即可得到&lt;br /&gt;
+`
+  c d e
+a 1 3 5
+b 2 4 6
+`&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><category term="大数据" /><category term="R" /><category term="列表" /><summary type="html"></summary></entry><entry><title type="html">R-矩阵和数组</title><link href="http://localhost:4000/R-%E7%9F%A9%E9%98%B5%E5%92%8C%E6%95%B0%E7%BB%84/" rel="alternate" type="text/html" title="R-矩阵和数组" /><published>2017-09-08T00:00:00+08:00</published><updated>2017-09-08T00:00:00+08:00</updated><id>http://localhost:4000/R-%E7%9F%A9%E9%98%B5%E5%92%8C%E6%95%B0%E7%BB%84</id><content type="html" xml:base="http://localhost:4000/R-%E7%9F%A9%E9%98%B5%E5%92%8C%E6%95%B0%E7%BB%84/">&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#矩阵matrix&quot; id=&quot;markdown-toc-矩阵matrix&quot;&gt;矩阵(matrix)&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#使用matrix函数创建矩阵&quot; id=&quot;markdown-toc-使用matrix函数创建矩阵&quot;&gt;使用matrix( )函数创建矩阵&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#采用先定义一个向量再为它添加维度属性的方法创建矩阵&quot; id=&quot;markdown-toc-采用先定义一个向量再为它添加维度属性的方法创建矩阵&quot;&gt;采用先定义一个向量，再为它添加维度属性的方法创建矩阵&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#矩阵的拼接&quot; id=&quot;markdown-toc-矩阵的拼接&quot;&gt;矩阵的拼接&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#数组array&quot; id=&quot;markdown-toc-数组array&quot;&gt;数组(array)&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#使用array函数创建数组&quot; id=&quot;markdown-toc-使用array函数创建数组&quot;&gt;使用array( )函数创建数组&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;矩阵matrix&quot;&gt;矩阵(matrix)&lt;/h2&gt;
+&lt;p&gt;– 向量+维度属性(整数向量:nrow,ncol)&lt;br /&gt;
+ &lt;strong&gt;ps:矩阵的维度只能为2&lt;br /&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;使用matrix函数创建矩阵&quot;&gt;使用matrix( )函数创建矩阵&lt;/h3&gt;
+&lt;p&gt; 这个函数里至少要传入两个参数nrow和ncol，若要赋值，在应写在这两个参数前&lt;br /&gt;
+ 例如：&lt;br /&gt;
+  创建一个3行2列，元素为空的矩阵x1，代码为x&amp;lt;-matrix(nrow=3,ncol=2)&lt;br /&gt;
+  若要创建一个3行2列，元素为1到6的矩阵，则代码为x&amp;lt;-matrix(1:6,nrow=3,ncol=2)&lt;br /&gt;
+&lt;strong&gt; ps:R是列优先语言,一列填满后才会填下一列&lt;br /&gt;
+  dim( )可以查看矩阵的维度属性。例如dim(x)，会显示3 2，即x为一个3行2列的矩阵&lt;br /&gt;
+  attributes( )可以查看矩阵的所有属性。例如attributes(x)，会显示$dim 3 2&lt;br /&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;采用先定义一个向量再为它添加维度属性的方法创建矩阵&quot;&gt;采用先定义一个向量，再为它添加维度属性的方法创建矩阵&lt;/h3&gt;
+&lt;p&gt; 例如：y&amp;lt;-1:6，创建一个1到6的向量，然后使用dim(y)&amp;lt;-c(2,3)，为其添加2行3列的属性即可。&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;矩阵的拼接&quot;&gt;矩阵的拼接&lt;/h3&gt;
+&lt;p&gt; 定义一个与y行列数相同的矩阵y2&amp;lt;-matrix(2:7,nrow=2,ncol=3)&lt;br /&gt;
+– 使用rbind( )函数按行拼接&lt;br /&gt;
+ 例如：rbind(y,y2)，则会得到一个4行3列的矩阵&lt;br /&gt;
 `
      [,1] [,2] [,3]
 [1,]    1    3    5
 [2,]    2    4    6
 [3,]    2    4    6
 [4,]    3    5    7
-`&lt;br&gt;
---&amp;nbsp;使用cbind(&amp;nbsp;)函数按列拼接&lt;br&gt;
-&amp;emsp;例如：cbind(y,y2)，则会得到一个2行6列的矩阵&lt;br&gt;
-`
+&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;br&amp;gt;
+--&amp;amp;nbsp;使用cbind(&amp;amp;nbsp;)函数按列拼接&amp;lt;br&amp;gt;
+&amp;amp;emsp;例如：cbind(y,y2)，则会得到一个2行6列的矩阵&amp;lt;br&amp;gt;
+&lt;/code&gt;
      [,1] [,2] [,3] [,4] [,5] [,6]
 [1,]    1    3    5    2    4    6
 [2,]    2    4    6    3    5    7
-`&lt;br&gt;
+`&lt;br /&gt;&lt;/p&gt;
 
-## 数组(array)
---&amp;nbsp;与矩阵类似，但是维度可以大于2&lt;br&gt;
-### 使用array(&amp;nbsp;)函数创建数组
-&amp;emsp;这个函数里需要传入两个参数，第一个为数组的内容，第二个为维度的设定&lt;br&gt;
-&amp;emsp;例如：&lt;br&gt;
-&amp;emsp;&amp;emsp;z&lt;-array(1:24,dim=c(4,6))，即可得到一个4行6列的二维数组
+&lt;h2 id=&quot;数组array&quot;&gt;数组(array)&lt;/h2&gt;
+&lt;p&gt;– 与矩阵类似，但是维度可以大于2&lt;br /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;使用array函数创建数组&quot;&gt;使用array( )函数创建数组&lt;/h3&gt;
+&lt;p&gt; 这个函数里需要传入两个参数，第一个为数组的内容，第二个为维度的设定&lt;br /&gt;
+ 例如：&lt;br /&gt;
+  z&amp;lt;-array(1:24,dim=c(4,6))，即可得到一个4行6列的二维数组
 `
      [,1] [,2] [,3] [,4] [,5] [,6]
 [1,]    1    5    9   13   17   21
 [2,]    2    6   10   14   18   22
 [3,]    3    7   11   15   19   23
 [4,]    4    8   12   16   20   24
-`&lt;br&gt;
-&amp;emsp;&amp;emsp;z1&lt;-array(1:24,dim=c(2,3,4))，即可得到一个每个维度都是2行3列的二维数组的四维数组&lt;br&gt;
-&amp;emsp;&amp;emsp;**ps:排列数字时，会先按列排完第一个维度中的2行3列矩阵，再排第二个维度，以此类推&lt;br&gt;**
-`
-, , 1
+&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;br&amp;gt;
+&amp;amp;emsp;&amp;amp;emsp;z1&amp;lt;-array(1:24,dim=c(2,3,4))，即可得到一个每个维度都是2行3列的二维数组的四维数组&amp;lt;br&amp;gt;
+&amp;amp;emsp;&amp;amp;emsp;**ps:排列数字时，会先按列排完第一个维度中的2行3列矩阵，再排第二个维度，以此类推&amp;lt;br&amp;gt;**
+&lt;/code&gt;
+, , 1&lt;/p&gt;
 
-     [,1] [,2] [,3]
-[1,]    1    3    5
-[2,]    2    4    6
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; [,1] [,2] [,3] [1,]    1    3    5 [2,]    2    4    6
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-, , 2
+&lt;p&gt;, , 2&lt;/p&gt;
 
-     [,1] [,2] [,3]
-[1,]    7    9   11
-[2,]    8   10   12
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; [,1] [,2] [,3] [1,]    7    9   11 [2,]    8   10   12
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-, , 3
+&lt;p&gt;, , 3&lt;/p&gt;
 
-     [,1] [,2] [,3]
-[1,]   13   15   17
-[2,]   14   16   18
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; [,1] [,2] [,3] [1,]   13   15   17 [2,]   14   16   18
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-, , 4
+&lt;p&gt;, , 4&lt;/p&gt;
 
-     [,1] [,2] [,3]
-[1,]   19   21   23
-[2,]   20   22   24
-`&lt;br&gt;</content><author><name></name></author><category term="大数据" /><category term="R" /><category term="矩阵" /><category term="数组" /><summary type="html">* content {:toc}</summary></entry><entry><title type="html">R-向量</title><link href="http://localhost:4000/R-%E5%90%91%E9%87%8F/" rel="alternate" type="text/html" title="R-向量" /><published>2017-09-08T00:00:00+08:00</published><updated>2017-09-08T00:00:00+08:00</updated><id>http://localhost:4000/R-%E5%90%91%E9%87%8F</id><content type="html" xml:base="http://localhost:4000/R-%E5%90%91%E9%87%8F/">&lt;ul id=&quot;markdown-toc&quot;&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; [,1] [,2] [,3] [1,]   19   21   23 [2,]   20   22   24 `&amp;lt;br&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="大数据" /><category term="R" /><category term="矩阵" /><category term="数组" /><summary type="html"></summary></entry><entry><title type="html">R-向量</title><link href="http://localhost:4000/R-%E5%90%91%E9%87%8F/" rel="alternate" type="text/html" title="R-向量" /><published>2017-09-08T00:00:00+08:00</published><updated>2017-09-08T00:00:00+08:00</updated><id>http://localhost:4000/R-%E5%90%91%E9%87%8F</id><content type="html" xml:base="http://localhost:4000/R-%E5%90%91%E9%87%8F/">&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#向量vector&quot; id=&quot;markdown-toc-向量vector&quot;&gt;向量(vector)&lt;/a&gt;    &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#使用vector函数创建向量&quot; id=&quot;markdown-toc-使用vector函数创建向量&quot;&gt;使用vector( )函数创建向量&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#使用创建连续的整型向量&quot; id=&quot;markdown-toc-使用创建连续的整型向量&quot;&gt;使用&lt;strong&gt;:&lt;/strong&gt;创建连续的整型向量&lt;/a&gt;&lt;/li&gt;
@@ -133,7 +261,7 @@ a b c d&amp;lt;br&amp;gt;
  创建复数型变量，x&amp;lt;-1+2i&lt;br /&gt;&lt;/p&gt;
 &lt;h3 id=&quot;查看变量的值的方法&quot;&gt;查看变量的值的方法&lt;/h3&gt;
 &lt;p&gt; 输入变量名，回车即可&lt;br /&gt;
- 例如：输入x，回车，则会显示[1] 1.其中[ ]中的1代表后面所接的元素，是x中的第1个元素；没有[ ]的1代表x中存储的内容为1&lt;br /&gt;
+ 例如：输入x，回车，则会显示[1] 1.其中[ ]中的1代表后面所接的元素，是x中的第1个元素；没有[ ]的1代表x中存储的内容为1&lt;br /&gt;
  &lt;em&gt;右侧Global Environment中也会显示变量名和对应的值&lt;/em&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h3 id=&quot;查看对象的类型&quot;&gt;查看对象的类型&lt;/h3&gt;
 &lt;p&gt; 使用class()函数&lt;br /&gt;
