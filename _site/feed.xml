@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-09-15T17:14:10+08:00</updated><id>http://localhost:4000/</id><title type="html">Wayne</title><subtitle>Wait me,Big data</subtitle><entry><title type="html">R-缺失值</title><link href="http://localhost:4000/R-%E7%BC%BA%E5%A4%B1%E5%80%BC/" rel="alternate" type="text/html" title="R-缺失值" /><published>2017-09-14T00:00:00+08:00</published><updated>2017-09-14T00:00:00+08:00</updated><id>http://localhost:4000/R-%E7%BC%BA%E5%A4%B1%E5%80%BC</id><content type="html" xml:base="http://localhost:4000/R-%E7%BC%BA%E5%A4%B1%E5%80%BC/">&lt;ul id=&quot;markdown-toc&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-09-16T13:10:57+08:00</updated><id>http://localhost:4000/</id><title type="html">Wayne</title><subtitle>Wait me,Big data</subtitle><entry><title type="html">R-缺失值</title><link href="http://localhost:4000/R-missing-value/" rel="alternate" type="text/html" title="R-缺失值" /><published>2017-09-14T00:00:00+08:00</published><updated>2017-09-14T00:00:00+08:00</updated><id>http://localhost:4000/R-missing%20value</id><content type="html" xml:base="http://localhost:4000/R-missing-value/">&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#缺失值missingvalue&quot; id=&quot;markdown-toc-缺失值missingvalue&quot;&gt;缺失值(missing value)&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#使用isna和isnan判断向量中是否含有缺失值&quot; id=&quot;markdown-toc-使用isna和isnan判断向量中是否含有缺失值&quot;&gt;使用is.na( )和is.nan( )判断向量中是否含有缺失值&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -43,7 +43,7 @@ is.nan(y)
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;说明，如果y中包含NAN，则可以被is.na( )检测出来&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><category term="大数据" /><category term="R" /><category term="缺失值" /><summary type="html"></summary></entry><entry><title type="html">R-数据框</title><link href="http://localhost:4000/R-%E6%95%B0%E6%8D%AE%E6%A1%86/" rel="alternate" type="text/html" title="R-数据框" /><published>2017-09-14T00:00:00+08:00</published><updated>2017-09-14T00:00:00+08:00</updated><id>http://localhost:4000/R-%E6%95%B0%E6%8D%AE%E6%A1%86</id><content type="html" xml:base="http://localhost:4000/R-%E6%95%B0%E6%8D%AE%E6%A1%86/">&lt;ul id=&quot;markdown-toc&quot;&gt;
+&lt;p&gt;说明，如果y中包含NAN，则可以被is.na( )检测出来&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><category term="大数据" /><category term="R" /><category term="缺失值" /><summary type="html"></summary></entry><entry><title type="html">R-数据框</title><link href="http://localhost:4000/R-data-frame/" rel="alternate" type="text/html" title="R-数据框" /><published>2017-09-14T00:00:00+08:00</published><updated>2017-09-14T00:00:00+08:00</updated><id>http://localhost:4000/R-data%20frame</id><content type="html" xml:base="http://localhost:4000/R-data-frame/">&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#数据框data-frame&quot; id=&quot;markdown-toc-数据框data-frame&quot;&gt;数据框(data frame)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -52,7 +52,31 @@ is.nan(y)
 – 视为各元素长度相同的列表&lt;br /&gt;
   · 每个元素代表&lt;em&gt;一列数据&lt;/em&gt;&lt;br /&gt;
   · 每个元素的长度代表&lt;em&gt;行数&lt;/em&gt;&lt;br /&gt;
-  · 元素类型可以不同&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><category term="大数据" /><category term="R" /><category term="数据框" /><summary type="html"></summary></entry><entry><title type="html">R-因子</title><link href="http://localhost:4000/R-%E5%9B%A0%E5%AD%90/" rel="alternate" type="text/html" title="R-因子" /><published>2017-09-09T00:00:00+08:00</published><updated>2017-09-09T00:00:00+08:00</updated><id>http://localhost:4000/R-%E5%9B%A0%E5%AD%90</id><content type="html" xml:base="http://localhost:4000/R-%E5%9B%A0%E5%AD%90/">&lt;ul id=&quot;markdown-toc&quot;&gt;
+  · 元素类型可以不同&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><category term="大数据" /><category term="R" /><category term="数据框" /><summary type="html"></summary></entry><entry><title type="html">R-列表</title><link href="http://localhost:4000/R-list/" rel="alternate" type="text/html" title="R-列表" /><published>2017-09-09T00:00:00+08:00</published><updated>2017-09-09T00:00:00+08:00</updated><id>http://localhost:4000/R-list</id><content type="html" xml:base="http://localhost:4000/R-list/">&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#列表list&quot; id=&quot;markdown-toc-列表list&quot;&gt;列表(list)&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#使用list函数创建列表&quot; id=&quot;markdown-toc-使用list函数创建列表&quot;&gt;使用list( )函数创建列表&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#可以使用列表和dimnames函数为矩阵的每行每列命名添加name属性&quot; id=&quot;markdown-toc-可以使用列表和dimnames函数为矩阵的每行每列命名添加name属性&quot;&gt;可以使用列表和dimnames( )函数为矩阵的每行每列命名(添加name属性)&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;列表list&quot;&gt;列表(list)&lt;/h2&gt;
+&lt;p&gt;– 可以包含不同类型的对象&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;使用list函数创建列表&quot;&gt;使用list( )函数创建列表&lt;/h3&gt;
+&lt;p&gt; 里面的参数为要传入list中的元素&lt;br /&gt;
+ 例如：&lt;br /&gt;
+  使用l1&amp;lt;-list(“a”,2,10L,3+4i,TRUE)可以创建一个第一个元素为字符”a”，第二个元素为数值2，第三个元素为整数10，第四个元素为复数3+4i，第五个元素为逻辑TRUE的列表&lt;br /&gt;
+  使用l2&amp;lt;-list(a=1,b=2,c=3)可以创建元素分别为1,2,3的数组，且三个元素的name分别为a,b,c&lt;br /&gt;
+  使用l3&amp;lt;-list(c(1,2,3),c(4,5,6,7))可以创建每个元素包含不止一个元素的列表，例中l3包含2个元素，第一个元素包含1,2,3三个元素，第二个元素包含4,5,6,7四个元素&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;可以使用列表和dimnames函数为矩阵的每行每列命名添加name属性&quot;&gt;可以使用列表和dimnames( )函数为矩阵的每行每列命名(添加name属性)&lt;/h3&gt;
+&lt;p&gt; 例如：新建2行3列的矩阵x&amp;lt;-matrix(1:6,nrow=2,ncol=3)，然后输入dimnames(x)&amp;lt;-list(c(“a”,”b”),c(“c”,”d”,”e”))，即可得到&lt;br /&gt;
+`
+  c d e
+a 1 3 5
+b 2 4 6
+`&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><category term="大数据" /><category term="R" /><category term="列表" /><summary type="html"></summary></entry><entry><title type="html">R-因子</title><link href="http://localhost:4000/R-factor/" rel="alternate" type="text/html" title="R-因子" /><published>2017-09-09T00:00:00+08:00</published><updated>2017-09-09T00:00:00+08:00</updated><id>http://localhost:4000/R-factor</id><content type="html" xml:base="http://localhost:4000/R-factor/">&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#因子factor&quot; id=&quot;markdown-toc-因子factor&quot;&gt;因子(factor)&lt;/a&gt;    &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#使用factor函数创建因子&quot; id=&quot;markdown-toc-使用factor函数创建因子&quot;&gt;使用factor( )函数创建因子&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#使用table查看当前因子的整体情况&quot; id=&quot;markdown-toc-使用table查看当前因子的整体情况&quot;&gt;使用table( )查看当前因子的整体情况&lt;/a&gt;&lt;/li&gt;
@@ -98,31 +122,45 @@ attr(,”levels”)&lt;br /&gt;
  可以看到，unclass后，内容变成了&lt;br /&gt; 
 &lt;code class=&quot;highlighter-rouge&quot;&gt;1 1 2 2 1&lt;/code&gt;&lt;br /&gt;
  曾经的属性是levels，它有两个水平female和male&lt;br /&gt;
- 去掉属性之后的因子，又变成了整数类型。输入class(unclass(x))，会得到integer&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><category term="大数据" /><category term="R" /><category term="因子" /><summary type="html"></summary></entry><entry><title type="html">R-列表</title><link href="http://localhost:4000/R-%E5%88%97%E8%A1%A8/" rel="alternate" type="text/html" title="R-列表" /><published>2017-09-09T00:00:00+08:00</published><updated>2017-09-09T00:00:00+08:00</updated><id>http://localhost:4000/R-%E5%88%97%E8%A1%A8</id><content type="html" xml:base="http://localhost:4000/R-%E5%88%97%E8%A1%A8/">&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#列表list&quot; id=&quot;markdown-toc-列表list&quot;&gt;列表(list)&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#使用list函数创建列表&quot; id=&quot;markdown-toc-使用list函数创建列表&quot;&gt;使用list( )函数创建列表&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#可以使用列表和dimnames函数为矩阵的每行每列命名添加name属性&quot; id=&quot;markdown-toc-可以使用列表和dimnames函数为矩阵的每行每列命名添加name属性&quot;&gt;可以使用列表和dimnames( )函数为矩阵的每行每列命名(添加name属性)&lt;/a&gt;&lt;/li&gt;
+ 去掉属性之后的因子，又变成了整数类型。输入class(unclass(x))，会得到integer&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><category term="大数据" /><category term="R" /><category term="因子" /><summary type="html"></summary></entry><entry><title type="html">R-向量</title><link href="http://localhost:4000/R-vector/" rel="alternate" type="text/html" title="R-向量" /><published>2017-09-08T00:00:00+08:00</published><updated>2017-09-08T00:00:00+08:00</updated><id>http://localhost:4000/R-vector</id><content type="html" xml:base="http://localhost:4000/R-vector/">&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#向量vector&quot; id=&quot;markdown-toc-向量vector&quot;&gt;向量(vector)&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#使用vector函数创建向量&quot; id=&quot;markdown-toc-使用vector函数创建向量&quot;&gt;使用vector( )函数创建向量&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#使用创建连续的整型向量&quot; id=&quot;markdown-toc-使用创建连续的整型向量&quot;&gt;使用&lt;strong&gt;:&lt;/strong&gt;创建连续的整型向量&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#使用c函数创建向量&quot; id=&quot;markdown-toc-使用c函数创建向量&quot;&gt;使用c( )函数创建向量&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#使用as类型名变量名来对变量进行类型的强制转换&quot; id=&quot;markdown-toc-使用as类型名变量名来对变量进行类型的强制转换&quot;&gt;使用as.类型名(变量名)来对变量进行类型的强制转换&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#使用names为向量中的元素添加名称&quot; id=&quot;markdown-toc-使用names为向量中的元素添加名称&quot;&gt;使用names( )为向量中的元素添加名称&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;列表list&quot;&gt;列表(list)&lt;/h2&gt;
-&lt;p&gt;– 可以包含不同类型的对象&lt;br /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;向量vector&quot;&gt;向量(vector)&lt;/h2&gt;
+&lt;p&gt;– 只能包含同一类型的对象&lt;br /&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;使用list函数创建列表&quot;&gt;使用list( )函数创建列表&lt;/h3&gt;
-&lt;p&gt; 里面的参数为要传入list中的元素&lt;br /&gt;
- 例如：&lt;br /&gt;
-  使用l1&amp;lt;-list(“a”,2,10L,3+4i,TRUE)可以创建一个第一个元素为字符”a”，第二个元素为数值2，第三个元素为整数10，第四个元素为复数3+4i，第五个元素为逻辑TRUE的列表&lt;br /&gt;
-  使用l2&amp;lt;-list(a=1,b=2,c=3)可以创建元素分别为1,2,3的数组，且三个元素的name分别为a,b,c&lt;br /&gt;
-  使用l3&amp;lt;-list(c(1,2,3),c(4,5,6,7))可以创建每个元素包含不止一个元素的列表，例中l3包含2个元素，第一个元素包含1,2,3三个元素，第二个元素包含4,5,6,7四个元素&lt;br /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;使用vector函数创建向量&quot;&gt;使用vector( )函数创建向量&lt;/h3&gt;
+&lt;p&gt; 函数格式:vector(“元素类型”,该向量包含的元素个数)&lt;br /&gt;
+ 例如:创建一个含有10个字符型元素的向量x，代码为x&amp;lt;-vector(“character”,length=10)&lt;br /&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;可以使用列表和dimnames函数为矩阵的每行每列命名添加name属性&quot;&gt;可以使用列表和dimnames( )函数为矩阵的每行每列命名(添加name属性)&lt;/h3&gt;
-&lt;p&gt; 例如：新建2行3列的矩阵x&amp;lt;-matrix(1:6,nrow=2,ncol=3)，然后输入dimnames(x)&amp;lt;-list(c(“a”,”b”),c(“c”,”d”,”e”))，即可得到&lt;br /&gt;
-`
-  c d e
-a 1 3 5
-b 2 4 6
-`&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><category term="大数据" /><category term="R" /><category term="列表" /><summary type="html"></summary></entry><entry><title type="html">R-矩阵和数组</title><link href="http://localhost:4000/R-%E7%9F%A9%E9%98%B5%E5%92%8C%E6%95%B0%E7%BB%84/" rel="alternate" type="text/html" title="R-矩阵和数组" /><published>2017-09-08T00:00:00+08:00</published><updated>2017-09-08T00:00:00+08:00</updated><id>http://localhost:4000/R-%E7%9F%A9%E9%98%B5%E5%92%8C%E6%95%B0%E7%BB%84</id><content type="html" xml:base="http://localhost:4000/R-%E7%9F%A9%E9%98%B5%E5%92%8C%E6%95%B0%E7%BB%84/">&lt;ul id=&quot;markdown-toc&quot;&gt;
+&lt;h3 id=&quot;使用创建连续的整型向量&quot;&gt;使用&lt;strong&gt;:&lt;/strong&gt;创建连续的整型向量&lt;/h3&gt;
+&lt;p&gt; 例如:创建一个含有数字1到4的向量x1，代码为x1&amp;lt;-1:4&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;使用c函数创建向量&quot;&gt;使用c( )函数创建向量&lt;/h3&gt;
+&lt;p&gt; 例如:创建一个含有数字1到4的向量x2，代码为x2&amp;lt;-c(1,2,3,4)&lt;br /&gt;
+ &lt;strong&gt;ps:如果你往c( )中传入的元素类型不同的话，R会自动尽量把它们转换成同一类型的元素&lt;br /&gt;
+ 例如:x3&amp;lt;-c(TRUE,10,”a”)，则会得到字符型向量x3 chr[1:3] “TRUE” “10” “a”&lt;br /&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;使用as类型名变量名来对变量进行类型的强制转换&quot;&gt;使用as.类型名(变量名)来对变量进行类型的强制转换&lt;/h3&gt;
+&lt;p&gt; 例如:x&amp;lt;-4,as.character(x)，即可将x转化为字符型变量，常用的还有as.numeric( )，as.logical( )等&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;使用names为向量中的元素添加名称&quot;&gt;使用names( )为向量中的元素添加名称&lt;/h3&gt;
+&lt;p&gt; 例如:引用上文中的x1，names(x1)&amp;lt;-c(“a”,”b”,”c”,”d”)，运行完之后得到&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;x1
+a b c d
+1 2 3 4
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;即第1,2,3,4个元素对应的名称为a,b,c,d&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><category term="大数据" /><category term="R" /><category term="向量" /><summary type="html"></summary></entry><entry><title type="html">R-矩阵和数组</title><link href="http://localhost:4000/R-matrix&array/" rel="alternate" type="text/html" title="R-矩阵和数组" /><published>2017-09-08T00:00:00+08:00</published><updated>2017-09-08T00:00:00+08:00</updated><id>http://localhost:4000/R-matrix&amp;array</id><content type="html" xml:base="http://localhost:4000/R-matrix&amp;array/">&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#矩阵matrix&quot; id=&quot;markdown-toc-矩阵matrix&quot;&gt;矩阵(matrix)&lt;/a&gt;    &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#使用matrix函数创建矩阵&quot; id=&quot;markdown-toc-使用matrix函数创建矩阵&quot;&gt;使用matrix( )函数创建矩阵&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#采用先定义一个向量再为它添加维度属性的方法创建矩阵&quot; id=&quot;markdown-toc-采用先定义一个向量再为它添加维度属性的方法创建矩阵&quot;&gt;采用先定义一个向量，再为它添加维度属性的方法创建矩阵&lt;/a&gt;&lt;/li&gt;
@@ -212,45 +250,7 @@ b 2 4 6
         [1,]   19   21   23
         [2,]   20   22   24
 &lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;</content><author><name></name></author><category term="大数据" /><category term="R" /><category term="矩阵" /><category term="数组" /><summary type="html"></summary></entry><entry><title type="html">R-向量</title><link href="http://localhost:4000/R-%E5%90%91%E9%87%8F/" rel="alternate" type="text/html" title="R-向量" /><published>2017-09-08T00:00:00+08:00</published><updated>2017-09-08T00:00:00+08:00</updated><id>http://localhost:4000/R-%E5%90%91%E9%87%8F</id><content type="html" xml:base="http://localhost:4000/R-%E5%90%91%E9%87%8F/">&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#向量vector&quot; id=&quot;markdown-toc-向量vector&quot;&gt;向量(vector)&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#使用vector函数创建向量&quot; id=&quot;markdown-toc-使用vector函数创建向量&quot;&gt;使用vector( )函数创建向量&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#使用创建连续的整型向量&quot; id=&quot;markdown-toc-使用创建连续的整型向量&quot;&gt;使用&lt;strong&gt;:&lt;/strong&gt;创建连续的整型向量&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#使用c函数创建向量&quot; id=&quot;markdown-toc-使用c函数创建向量&quot;&gt;使用c( )函数创建向量&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#使用as类型名变量名来对变量进行类型的强制转换&quot; id=&quot;markdown-toc-使用as类型名变量名来对变量进行类型的强制转换&quot;&gt;使用as.类型名(变量名)来对变量进行类型的强制转换&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#使用names为向量中的元素添加名称&quot; id=&quot;markdown-toc-使用names为向量中的元素添加名称&quot;&gt;使用names( )为向量中的元素添加名称&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;向量vector&quot;&gt;向量(vector)&lt;/h2&gt;
-&lt;p&gt;– 只能包含同一类型的对象&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;使用vector函数创建向量&quot;&gt;使用vector( )函数创建向量&lt;/h3&gt;
-&lt;p&gt; 函数格式:vector(“元素类型”,该向量包含的元素个数)&lt;br /&gt;
- 例如:创建一个含有10个字符型元素的向量x，代码为x&amp;lt;-vector(“character”,length=10)&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;使用创建连续的整型向量&quot;&gt;使用&lt;strong&gt;:&lt;/strong&gt;创建连续的整型向量&lt;/h3&gt;
-&lt;p&gt; 例如:创建一个含有数字1到4的向量x1，代码为x1&amp;lt;-1:4&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;使用c函数创建向量&quot;&gt;使用c( )函数创建向量&lt;/h3&gt;
-&lt;p&gt; 例如:创建一个含有数字1到4的向量x2，代码为x2&amp;lt;-c(1,2,3,4)&lt;br /&gt;
- &lt;strong&gt;ps:如果你往c( )中传入的元素类型不同的话，R会自动尽量把它们转换成同一类型的元素&lt;br /&gt;
- 例如:x3&amp;lt;-c(TRUE,10,”a”)，则会得到字符型向量x3 chr[1:3] “TRUE” “10” “a”&lt;br /&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;使用as类型名变量名来对变量进行类型的强制转换&quot;&gt;使用as.类型名(变量名)来对变量进行类型的强制转换&lt;/h3&gt;
-&lt;p&gt; 例如:x&amp;lt;-4,as.character(x)，即可将x转化为字符型变量，常用的还有as.numeric( )，as.logical( )等&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;使用names为向量中的元素添加名称&quot;&gt;使用names( )为向量中的元素添加名称&lt;/h3&gt;
-&lt;p&gt; 例如:引用上文中的x1，names(x1)&amp;lt;-c(“a”,”b”,”c”,”d”)，运行完之后得到&lt;br /&gt;&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;x1
-a b c d
-1 2 3 4
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;即第1,2,3,4个元素对应的名称为a,b,c,d&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><category term="大数据" /><category term="R" /><category term="向量" /><summary type="html"></summary></entry><entry><title type="html">R-常见对象和属性</title><link href="http://localhost:4000/R-%E5%B8%B8%E8%A7%81%E5%AF%B9%E8%B1%A1%E5%92%8C%E5%B1%9E%E6%80%A7/" rel="alternate" type="text/html" title="R-常见对象和属性" /><published>2017-08-27T00:00:00+08:00</published><updated>2017-08-27T00:00:00+08:00</updated><id>http://localhost:4000/R-%E5%B8%B8%E8%A7%81%E5%AF%B9%E8%B1%A1%E5%92%8C%E5%B1%9E%E6%80%A7</id><content type="html" xml:base="http://localhost:4000/R-%E5%B8%B8%E8%A7%81%E5%AF%B9%E8%B1%A1%E5%92%8C%E5%B1%9E%E6%80%A7/">&lt;ul id=&quot;markdown-toc&quot;&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="大数据" /><category term="R" /><category term="矩阵" /><category term="数组" /><summary type="html"></summary></entry><entry><title type="html">R-常见对象和属性</title><link href="http://localhost:4000/R-object&attribute/" rel="alternate" type="text/html" title="R-常见对象和属性" /><published>2017-08-27T00:00:00+08:00</published><updated>2017-08-27T00:00:00+08:00</updated><id>http://localhost:4000/R-object&amp;attribute</id><content type="html" xml:base="http://localhost:4000/R-object&amp;attribute/">&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#r中对象的5种基本类型classes-of-objects&quot; id=&quot;markdown-toc-r中对象的5种基本类型classes-of-objects&quot;&gt;R中对象的5种基本类型(classes of objects)&lt;/a&gt;    &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#r中的赋值符号为-&quot; id=&quot;markdown-toc-r中的赋值符号为-&quot;&gt;R中的赋值符号为&amp;lt;-&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#查看变量的值的方法&quot; id=&quot;markdown-toc-查看变量的值的方法&quot;&gt;查看变量的值的方法&lt;/a&gt;&lt;/li&gt;
@@ -289,7 +289,7 @@ a b c d
 &lt;p&gt;– 名称(name)&lt;br /&gt;
 – 维度(dimensions:matrix,array)&lt;br /&gt;
 – 类型(class)&lt;br /&gt;
-– 长度(length)&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><category term="大数据" /><category term="R" /><category term="对象和属性" /><summary type="html"></summary></entry><entry><title type="html">R-安装与帮助</title><link href="http://localhost:4000/R-%E5%AE%89%E8%A3%85%E4%B8%8E%E5%B8%AE%E5%8A%A9/" rel="alternate" type="text/html" title="R-安装与帮助" /><published>2017-08-20T00:00:00+08:00</published><updated>2017-08-20T00:00:00+08:00</updated><id>http://localhost:4000/R-%E5%AE%89%E8%A3%85%E4%B8%8E%E5%B8%AE%E5%8A%A9</id><content type="html" xml:base="http://localhost:4000/R-%E5%AE%89%E8%A3%85%E4%B8%8E%E5%B8%AE%E5%8A%A9/">&lt;ul id=&quot;markdown-toc&quot;&gt;
+– 长度(length)&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><category term="大数据" /><category term="R" /><category term="对象和属性" /><summary type="html"></summary></entry><entry><title type="html">R-安装与帮助</title><link href="http://localhost:4000/R-install&help/" rel="alternate" type="text/html" title="R-安装与帮助" /><published>2017-08-20T00:00:00+08:00</published><updated>2017-08-20T00:00:00+08:00</updated><id>http://localhost:4000/R-install&amp;help</id><content type="html" xml:base="http://localhost:4000/R-install&amp;help/">&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#r的获取与安装&quot; id=&quot;markdown-toc-r的获取与安装&quot;&gt;R的获取与安装&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#rstudio的获取与安装&quot; id=&quot;markdown-toc-rstudio的获取与安装&quot;&gt;RStudio的获取与安装&lt;br /&gt;&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#r中的包package&quot; id=&quot;markdown-toc-r中的包package&quot;&gt;R中的包(package)&lt;/a&gt;    &lt;ul&gt;

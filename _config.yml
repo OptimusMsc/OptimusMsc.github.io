@@ -54,10 +54,13 @@ weibo:              2978414332
 #hackernews:        username
 #behance:           username
 
+
+# Plugins
+# plugins：
+
 # Gems
-#gems:
-#Plugins
-plugins:
+gems:
+
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-gist
