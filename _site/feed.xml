@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-09-16T15:50:33+08:00</updated><id>http://localhost:4000/</id><title type="html">Wayne</title><subtitle>Wait me,Big data</subtitle><entry><title type="html">R-缺失值</title><link href="http://localhost:4000/R-missing-value/" rel="alternate" type="text/html" title="R-缺失值" /><published>2017-09-14T00:00:00+08:00</published><updated>2017-09-14T00:00:00+08:00</updated><id>http://localhost:4000/R-missing%20value</id><content type="html" xml:base="http://localhost:4000/R-missing-value/">&lt;ul id=&quot;markdown-toc&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-09-16T15:52:07+08:00</updated><id>http://localhost:4000/</id><title type="html">Wayne</title><subtitle>Wait me,Big data</subtitle><entry><title type="html">R-缺失值</title><link href="http://localhost:4000/R-missing-value/" rel="alternate" type="text/html" title="R-缺失值" /><published>2017-09-14T00:00:00+08:00</published><updated>2017-09-14T00:00:00+08:00</updated><id>http://localhost:4000/R-missing%20value</id><content type="html" xml:base="http://localhost:4000/R-missing-value/">&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#缺失值missingvalue&quot; id=&quot;markdown-toc-缺失值missingvalue&quot;&gt;缺失值(missing value)&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#使用isna和isnan判断向量中是否含有缺失值&quot; id=&quot;markdown-toc-使用isna和isnan判断向量中是否含有缺失值&quot;&gt;使用is.na( )和is.nan( )判断向量中是否含有缺失值&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -71,12 +71,13 @@ is.nan(y)
   使用l3&amp;lt;-list(c(1,2,3),c(4,5,6,7))可以创建每个元素包含不止一个元素的列表，例中l3包含2个元素，第一个元素包含1,2,3三个元素，第二个元素包含4,5,6,7四个元素&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;可以使用列表和dimnames函数为矩阵的每行每列命名添加name属性&quot;&gt;可以使用列表和dimnames( )函数为矩阵的每行每列命名(添加name属性)&lt;/h3&gt;
-&lt;p&gt; 例如：新建2行3列的矩阵x&amp;lt;-matrix(1:6,nrow=2,ncol=3)，然后输入dimnames(x)&amp;lt;-list(c(“a”,”b”),c(“c”,”d”,”e”))，即可得到&lt;br /&gt;
-`
-  c d e
+&lt;p&gt; 例如：新建2行3列的矩阵x&amp;lt;-matrix(1:6,nrow=2,ncol=3)，然后输入dimnames(x)&amp;lt;-list(c(“a”,”b”),c(“c”,”d”,”e”))，即可得到&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  c d e
 a 1 3 5
 b 2 4 6
-`&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><category term="大数据" /><category term="R" /><category term="列表" /><summary type="html"></summary></entry><entry><title type="html">R-因子</title><link href="http://localhost:4000/R-factor/" rel="alternate" type="text/html" title="R-因子" /><published>2017-09-09T00:00:00+08:00</published><updated>2017-09-09T00:00:00+08:00</updated><id>http://localhost:4000/R-factor</id><content type="html" xml:base="http://localhost:4000/R-factor/">&lt;ul id=&quot;markdown-toc&quot;&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="大数据" /><category term="R" /><category term="列表" /><summary type="html"></summary></entry><entry><title type="html">R-因子</title><link href="http://localhost:4000/R-factor/" rel="alternate" type="text/html" title="R-因子" /><published>2017-09-09T00:00:00+08:00</published><updated>2017-09-09T00:00:00+08:00</updated><id>http://localhost:4000/R-factor</id><content type="html" xml:base="http://localhost:4000/R-factor/">&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#因子factor&quot; id=&quot;markdown-toc-因子factor&quot;&gt;因子(factor)&lt;/a&gt;    &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#使用factor函数创建因子&quot; id=&quot;markdown-toc-使用factor函数创建因子&quot;&gt;使用factor( )函数创建因子&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#使用table查看当前因子的整体情况&quot; id=&quot;markdown-toc-使用table查看当前因子的整体情况&quot;&gt;使用table( )查看当前因子的整体情况&lt;/a&gt;&lt;/li&gt;
