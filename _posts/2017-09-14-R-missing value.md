@@ -18,7 +18,7 @@ tags:
 
 ## 使用is.na(&nbsp;)和is.nan(&nbsp;)判断向量中是否含有缺失值
 例如：<br>
-&emsp;若输入<br>
+若输入<br>
 
 	x <- c(1,NA,2,NA,3)
 	is.na(x)
