@@ -17,8 +17,8 @@ tags:
 --&nbsp;NA有类型属性：integer&nbsp;NA，character&nbsp;NA等<br>
 
 ## 使用is.na(&nbsp;)和is.nan(&nbsp;)判断向量中是否含有缺失值
-&emsp;例如：<br>
-&emsp;&emsp;若输入<br>
+例如：<br>
+&emsp;若输入<br>
 
 	x <- c(1,NA,2,NA,3)
 	is.na(x)
@@ -31,7 +31,7 @@ tags:
 	is.nan(x)
 	[1] FALSE FALSE FALSE FALSE FALSE
 
-&emsp;&emsp;若输入<br>
+若输入<br>
 
 	y <- c(1,NaN,2,NaN,3)
 	is.na(y)
