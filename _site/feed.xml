@@ -1,4 +1,191 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-09-18T21:46:07+08:00</updated><id>http://localhost:4000/</id><title type="html">Wayne</title><subtitle>Wait me,Big data</subtitle><entry><title type="html">R-缺失值</title><link href="http://localhost:4000/R-missing-value/" rel="alternate" type="text/html" title="R-缺失值" /><published>2017-09-14T00:00:00+08:00</published><updated>2017-09-14T00:00:00+08:00</updated><id>http://localhost:4000/R-missing%20value</id><content type="html" xml:base="http://localhost:4000/R-missing-value/">&lt;ul id=&quot;markdown-toc&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-11-14T21:06:39+08:00</updated><id>http://localhost:4000/</id><title type="html">Wayne</title><subtitle>Wait me,Big data</subtitle><entry><title type="html">R-构建子集</title><link href="http://localhost:4000/R-subsetting/" rel="alternate" type="text/html" title="R-构建子集" /><published>2017-10-27T00:00:00+08:00</published><updated>2017-10-27T00:00:00+08:00</updated><id>http://localhost:4000/R-subsetting</id><content type="html" xml:base="http://localhost:4000/R-subsetting/">&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#构建子集subsetting&quot; id=&quot;markdown-toc-构建子集subsetting&quot;&gt;构建子集(subsetting)&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#的用法&quot; id=&quot;markdown-toc-的用法&quot;&gt;[]的用法&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;构建子集subsetting&quot;&gt;构建子集(subsetting)&lt;/h2&gt;
+&lt;p&gt;· 原始数据(raw dataset)→预处理后的数据(clean dataset)&lt;br /&gt;
+· 基本方法&lt;br /&gt;
+ - &lt;strong&gt;[]&lt;/strong&gt;:提取一个或多个类型相同的元素&lt;br /&gt;
+ - &lt;strong&gt;[[]]&lt;/strong&gt;:从列表或数据框中提取元素&lt;br /&gt;
+ - &lt;strong&gt;$&lt;/strong&gt;:按名字从列表或数据框中提取元素&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;的用法&quot;&gt;[]的用法&lt;/h3&gt;
+&lt;p&gt; 例如：&lt;br /&gt;
+运行x&amp;lt;-1:10，创建一个从1到10的向量x，若要取这个向量中的第一个元素，则输入x[1]即可；同理，若要取第五个元素，则输入x[5]即可。得到的结果为：&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[1] 1
+[1] 5
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;若想要拿到前五个元素，则应输入x[1:5]，即可得到：&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[1] 1 2 3 4 5
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;tips:R中的数组下标是从1开始的，而不是从0开始的。&lt;/strong&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;可以使用x[判定条件]，筛选特定的元素。输入x[x&amp;gt;5]，即可得到：&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[1]  6  7  8  9 10
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;输入x[x&amp;gt;5 &amp;amp; x&amp;lt;7]，即可得到x中大于5且小于7的数：&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[1] 6
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;输入x[x&amp;lt;3&lt;/td&gt;
+      &lt;td&gt;x&amp;gt;7]，即可得到x中小于3或大于7的数：&lt;br /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[1]  1  2  8  9 10
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;ps:若只是输入x&amp;gt;5，则会得到&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[1] FALSE FALSE FALSE FALSE FALSE  TRUE  TRUE  TRUE  TRUE  TRUE
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;我们还可以构建带有名字(name)属性的向量，y&amp;lt;-1:4,names(y)&amp;lt;-c(“a”,”b”,”c”,”d”),这样除了使用y[2]获取y中的第二个元素，还可以使用y[“b”]来获取名字为b的元素(名字要加双引号””)，这两种操作均会得到：&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;b 
+2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="大数据" /><category term="R" /><category term="构建子集" /><summary type="html"></summary></entry><entry><title type="html">R-日期与时间</title><link href="http://localhost:4000/R-date&time/" rel="alternate" type="text/html" title="R-日期与时间" /><published>2017-09-19T00:00:00+08:00</published><updated>2017-09-19T00:00:00+08:00</updated><id>http://localhost:4000/R-date&amp;time</id><content type="html" xml:base="http://localhost:4000/R-date&amp;time/">&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#日期与时间datetime&quot; id=&quot;markdown-toc-日期与时间datetime&quot;&gt;日期与时间(date&amp;amp;time)&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#日期date&quot; id=&quot;markdown-toc-日期date&quot;&gt;日期；Date&lt;/a&gt;        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#使用date获取当前时间&quot; id=&quot;markdown-toc-使用date获取当前时间&quot;&gt;使用date( )获取当前时间&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#使用syedate获取当前日期&quot; id=&quot;markdown-toc-使用syedate获取当前日期&quot;&gt;使用Sye.Date( )获取当前日期&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#使用asdate函数将任意日期存储为date类型&quot; id=&quot;markdown-toc-使用asdate函数将任意日期存储为date类型&quot;&gt;使用as.Date( )函数将任意日期存储为Date类型&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#使用weekdaysmonthsquartersjulianx3函数可以获取date类型的变量中的星期月份季度距离1970-01-01过了多少天属性&quot; id=&quot;markdown-toc-使用weekdaysmonthsquartersjulianx3函数可以获取date类型的变量中的星期月份季度距离1970-01-01过了多少天属性&quot;&gt;使用weekdays( )、months( )、quarters( )、julian(x3)函数可以获取Date类型的变量中的”星期”、”月份”、”季度”、”距离1970-01-01过了多少天”属性&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#date类型的数值可以直接进行数学运算&quot; id=&quot;markdown-toc-date类型的数值可以直接进行数学运算&quot;&gt;Date类型的数值可以直接进行数学运算&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#时间posixctposixlt&quot; id=&quot;markdown-toc-时间posixctposixlt&quot;&gt;时间：POSIXct/POSIXlt&lt;/a&gt;        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#使用systime获取当前的系统时间&quot; id=&quot;markdown-toc-使用systime获取当前的系统时间&quot;&gt;使用Sys.time( )获取当前的系统时间&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#使用asposixlt函数将posixct转换为posixlt型&quot; id=&quot;markdown-toc-使用asposixlt函数将posixct转换为posixlt型&quot;&gt;使用as.POSIXlt( )函数将”POSIXct”转换为”POSIXlt”型&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#使用names和unclass函数查看posixlt类型中存了哪些变量&quot; id=&quot;markdown-toc-使用names和unclass函数查看posixlt类型中存了哪些变量&quot;&gt;使用names( )和unclass( )函数查看POSIXlt类型中存了哪些变量&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#使用获取每个对应变量的具体值&quot; id=&quot;markdown-toc-使用获取每个对应变量的具体值&quot;&gt;使用$获取每个对应变量的具体值&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#使用asposixct函数将posixlt转换为posixct型&quot; id=&quot;markdown-toc-使用asposixct函数将posixlt转换为posixct型&quot;&gt;使用as.POSIXct( )函数将”POSIXlt”转换为”POSIXct”型&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;日期与时间datetime&quot;&gt;日期与时间(date&amp;amp;time)&lt;/h2&gt;
+&lt;h3 id=&quot;日期date&quot;&gt;日期；Date&lt;/h3&gt;
+&lt;p&gt;  · 距离1970-01-01的天数/date( )/Sys.Date( )&lt;br /&gt;
+  · weekdays( )/months( )/quarters( )/julian( )&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;使用date获取当前时间&quot;&gt;使用date( )获取当前时间&lt;/h4&gt;
+&lt;p&gt; 运行x &amp;lt;- date( )，可以得到&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[1] &quot;Tue Sep 19 17:28:01 2017&quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt; 存储类型为”character”型&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;使用syedate获取当前日期&quot;&gt;使用Sye.Date( )获取当前日期&lt;/h4&gt;
+&lt;p&gt; 运行x2 &amp;lt;- Sys.Date( )，可以得到&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &quot;2017-09-19&quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt; 存储类型为”Date”型&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;使用asdate函数将任意日期存储为date类型&quot;&gt;使用as.Date( )函数将任意日期存储为Date类型&lt;/h4&gt;
+&lt;p&gt; 例如：x3 &amp;lt;- as.Date(“2018-01-01”)，运行x3以及class(x3)将会得到&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[1] &quot;2018-01-01&quot;
+[1] &quot;Date&quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt; 需要注意的是，as.Date( )函数中填入的为字符型变量，年月日之间需要用&lt;strong&gt;-&lt;/strong&gt;隔开，月和日均需要输入两位数&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;使用weekdaysmonthsquartersjulianx3函数可以获取date类型的变量中的星期月份季度距离1970-01-01过了多少天属性&quot;&gt;使用weekdays( )、months( )、quarters( )、julian(x3)函数可以获取Date类型的变量中的”星期”、”月份”、”季度”、”距离1970-01-01过了多少天”属性&lt;/h4&gt;
+&lt;p&gt; 例如：weekdays(x3)、months(x3)、quarters(x3)、julian(x3)会得到&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[1] &quot;星期一&quot;
+[1] &quot;一月&quot;
+[1] &quot;Q1&quot;
+[1] 17532
+attr(,&quot;origin&quot;)
+[1] &quot;1970-01-01&quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h4 id=&quot;date类型的数值可以直接进行数学运算&quot;&gt;Date类型的数值可以直接进行数学运算&lt;/h4&gt;
+&lt;p&gt; 例如；新建Date型变量x4 &amp;lt;- as.Date(“2019-01-01”)，输入x4-x3，会得到&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Time difference of 365 days
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt; 若只想得到数字结果，只需要强制转换为numeric类型即可，输入as.numeric(x4-x3)，会得到&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[1] 365
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;时间posixctposixlt&quot;&gt;时间：POSIXct/POSIXlt&lt;/h3&gt;
+&lt;p&gt;  · 距离1970-01-01的秒数/Sys.time( )&lt;br /&gt;
+  · POSIXct：整数，常用于存入数据框&lt;br /&gt;
+  · POSIXlt：列表，还包含星期、年、月、日等信息&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;使用systime获取当前的系统时间&quot;&gt;使用Sys.time( )获取当前的系统时间&lt;/h4&gt;
+&lt;p&gt; 运行x &amp;lt;- Sys.time( )，可以得到&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[1] &quot;2017-09-20 11:12:54 CST&quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt; 存储类型为”POSIXct”型&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;使用asposixlt函数将posixct转换为posixlt型&quot;&gt;使用as.POSIXlt( )函数将”POSIXct”转换为”POSIXlt”型&lt;/h4&gt;
+&lt;p&gt; 运行p &amp;lt;- as.POSIXlt(x)，可以得到&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[1] &quot;2017-09-20 11:12:54 CST&quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt; 存储类型为”POSIXlt”型&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;使用names和unclass函数查看posixlt类型中存了哪些变量&quot;&gt;使用names( )和unclass( )函数查看POSIXlt类型中存了哪些变量&lt;/h4&gt;
+&lt;p&gt; 运行names(unclass(p))，可以得到&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; [1] &quot;sec&quot;    &quot;min&quot;    &quot;hour&quot;   &quot;mday&quot;   &quot;mon&quot;    &quot;year&quot;   &quot;wday&quot;   &quot;yday&quot;   &quot;isdst&quot;  &quot;zone&quot;   &quot;gmtoff&quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h4 id=&quot;使用获取每个对应变量的具体值&quot;&gt;使用$获取每个对应变量的具体值&lt;/h4&gt;
+&lt;p&gt; 例如：运行p$sec，可以得到&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[1] 54.43747
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt; 即p存储的sec变量的值为54.43747&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;使用asposixct函数将posixlt转换为posixct型&quot;&gt;使用as.POSIXct( )函数将”POSIXlt”转换为”POSIXct”型&lt;/h4&gt;
+&lt;p&gt; 例如：运行q &amp;lt;- as.POSIXct(p)，class(q)可以得到q为”POSIXct”型&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><category term="大数据" /><category term="R" /><category term="日期" /><category term="时间" /><summary type="html"></summary></entry><entry><title type="html">R-缺失值</title><link href="http://localhost:4000/R-missing-value/" rel="alternate" type="text/html" title="R-缺失值" /><published>2017-09-14T00:00:00+08:00</published><updated>2017-09-14T00:00:00+08:00</updated><id>http://localhost:4000/R-missing%20value</id><content type="html" xml:base="http://localhost:4000/R-missing-value/">&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#缺失值missingvalue&quot; id=&quot;markdown-toc-缺失值missingvalue&quot;&gt;缺失值(missing value)&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#使用isna和isnan判断向量中是否含有缺失值&quot; id=&quot;markdown-toc-使用isna和isnan判断向量中是否含有缺失值&quot;&gt;使用is.na( )和is.nan( )判断向量中是否含有缺失值&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -8,8 +195,8 @@
 – NA有类型属性：integer NA，character NA等&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;使用isna和isnan判断向量中是否含有缺失值&quot;&gt;使用is.na( )和is.nan( )判断向量中是否含有缺失值&lt;/h2&gt;
-&lt;p&gt; 例如：&lt;br /&gt;
-  若输入&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;例如：&lt;br /&gt;
+若输入&lt;br /&gt;&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;x &amp;lt;- c(1,NA,2,NA,3)
 is.na(x)
@@ -26,7 +213,7 @@ is.nan(x)
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;  若输入&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;若输入&lt;br /&gt;&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;y &amp;lt;- c(1,NaN,2,NaN,3)
 is.na(y)
@@ -44,7 +231,10 @@ is.nan(y)
 &lt;/div&gt;
 
 &lt;p&gt;说明，如果y中包含NAN，则可以被is.na( )检测出来&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><category term="大数据" /><category term="R" /><category term="缺失值" /><summary type="html"></summary></entry><entry><title type="html">R-数据框</title><link href="http://localhost:4000/R-data-frame/" rel="alternate" type="text/html" title="R-数据框" /><published>2017-09-14T00:00:00+08:00</published><updated>2017-09-14T00:00:00+08:00</updated><id>http://localhost:4000/R-data%20frame</id><content type="html" xml:base="http://localhost:4000/R-data-frame/">&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#数据框data-frame&quot; id=&quot;markdown-toc-数据框data-frame&quot;&gt;数据框(data frame)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#数据框data-frame&quot; id=&quot;markdown-toc-数据框data-frame&quot;&gt;数据框(data frame)&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#使用dataframe函数创建数据框&quot; id=&quot;markdown-toc-使用dataframe函数创建数据框&quot;&gt;使用data.frame( )函数创建数据框&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;数据框data-frame&quot;&gt;数据框(data frame)&lt;/h2&gt;
@@ -52,7 +242,49 @@ is.nan(y)
 – 视为各元素长度相同的列表&lt;br /&gt;
   · 每个元素代表&lt;em&gt;一列数据&lt;/em&gt;&lt;br /&gt;
   · 每个元素的长度代表&lt;em&gt;行数&lt;/em&gt;&lt;br /&gt;
-  · 元素类型可以不同&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><category term="大数据" /><category term="R" /><category term="数据框" /><summary type="html"></summary></entry><entry><title type="html">R-列表</title><link href="http://localhost:4000/R-list/" rel="alternate" type="text/html" title="R-列表" /><published>2017-09-09T00:00:00+08:00</published><updated>2017-09-09T00:00:00+08:00</updated><id>http://localhost:4000/R-list</id><content type="html" xml:base="http://localhost:4000/R-list/">&lt;ul id=&quot;markdown-toc&quot;&gt;
+  · 元素类型可以不同&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;使用dataframe函数创建数据框&quot;&gt;使用data.frame( )函数创建数据框&lt;/h3&gt;
+&lt;p&gt; 例如：df &amp;lt;- data.frame(id = c(1,2,3,4), name = c(“a”,”b”,”c”,”d”), gender = c(TRUE,TRUE,FALSE,FALSE))，即可得到&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  id name gender
+1  1    a   TRUE
+2  2    b   TRUE
+3  3    c  FALSE
+4  4    d  FALSE
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt; 可以使用nrow( )和ncol( )来查看数据框的行列数&lt;br /&gt;
+ 例如：nrow(df)和ncol(df)会得到&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; nrow(df)
+[1] 4
+&amp;gt; ncol(df)
+[1] 3	
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt; 数据框中的&lt;strong&gt;元素类型&lt;/strong&gt;也可以&lt;strong&gt;一致&lt;/strong&gt;&lt;br /&gt;
+ 例如：df2 &amp;lt;- data.frame(id = c(1,2,3,4), score = c(80,86,90,100))，会得到 &lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  id score
+1  1    80
+2  2    86
+3  3    90
+4  4   100
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt; 这种特殊情况下，可以将数据框转换为矩阵，使用data.matrix( )函数，输入data.matrix(df2)，会得到&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;     id score
+[1,]  1    80
+[2,]  2    86
+[3,]  3    90
+[4,]  4   100
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="大数据" /><category term="R" /><category term="数据框" /><summary type="html"></summary></entry><entry><title type="html">R-列表</title><link href="http://localhost:4000/R-list/" rel="alternate" type="text/html" title="R-列表" /><published>2017-09-09T00:00:00+08:00</published><updated>2017-09-09T00:00:00+08:00</updated><id>http://localhost:4000/R-list</id><content type="html" xml:base="http://localhost:4000/R-list/">&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#列表list&quot; id=&quot;markdown-toc-列表list&quot;&gt;列表(list)&lt;/a&gt;    &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#使用list函数创建列表&quot; id=&quot;markdown-toc-使用list函数创建列表&quot;&gt;使用list( )函数创建列表&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#可以使用列表和dimnames函数为矩阵的每行每列命名添加name属性&quot; id=&quot;markdown-toc-可以使用列表和dimnames函数为矩阵的每行每列命名添加name属性&quot;&gt;可以使用列表和dimnames( )函数为矩阵的每行每列命名(添加name属性)&lt;/a&gt;&lt;/li&gt;
